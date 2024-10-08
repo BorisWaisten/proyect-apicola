@@ -17,12 +17,11 @@ export async function POST(req) {
         console.log(email, message);
         
 
-        // Enviar correo
         await transporter.sendMail({
-            from: email, // Tu dirección de correo como remitente
-            to: process.env.GMAIL_USER, // Correo del destinatario
-            subject: 'Nuevo mensaje de contacto', // Asunto del correo
-            text: `Mensaje de: ${email}\n\n${message}`, // Contenido del mensaje
+            from: email, 
+            to: process.env.GMAIL_USER, 
+            subject: 'Nuevo mensaje de contacto', 
+            text: `Mensaje de: ${email}\n\n${message}`, 
         });
 
 
