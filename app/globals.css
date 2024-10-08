@@ -2,24 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Definición de variables globales */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #ffd414ed; /* Amarillo con transparencia */
+  --secondary: #f3f4f6;/* Gris claro */
+  --terciary:#4b5563;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary: rgba(255, 212, 20, 0.93); /* O puedes definir un tono diferente para el modo oscuro */
+    --secondary: #f3f4f6;
   }
 }
 
+/* Aplicación directa de variables en el body */
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--primary);
+  background: var(--secondary);
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Nueva clase de utilidad */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
