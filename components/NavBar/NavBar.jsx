@@ -33,7 +33,7 @@ export default function Navbar({ sections }) {
       className={`fixed top-0 left-0 w-full bg-primary text-white z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between   h-[12vh] sm:h-[12vh] md:h-[15vh] lg:h-[15vh] items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
@@ -46,12 +46,12 @@ export default function Navbar({ sections }) {
           </div>
 
           {/* Menú de Navegación (Responsive) */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden  md:flex space-x-8">
             {Object.keys(navItems).map((item) => (
               <a
                 href={`#${item}`}
                 key={item}
-                className="relative py-2 text-xs sm:text-sm md:text-base lg:text-base font-medium text-white hover:text-gray-300 after:absolute after:bg-cuarteto after:w-full after:h-0.5 after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out"
+                className="relative py-2 text-xs sm:text-sm md:text-base lg:text-lg font-medium text-white hover:text-gray-300 after:absolute after:bg-cuarteto after:w-full after:h-0.5 after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out"
               >
                 {navItems[item]}
               </a>
@@ -113,7 +113,7 @@ export default function Navbar({ sections }) {
       {/* Menú móvil desplegable */}
       {isMobileMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-2  space-y-1 sm:px-3">
             {Object.keys(navItems).map((item) => (
               <a
                 href={`#${item}`}
@@ -126,7 +126,7 @@ export default function Navbar({ sections }) {
           </div>
 
           {/* Language Toggle para móviles */}
-          <div className="flex justify-center py-4">
+          <div className="flex justify-start pl-6 py-4">
             <LanguageToggle language={language} onLanguageToggle={toggleLanguage} />
           </div>
         </div>
