@@ -5,8 +5,8 @@ export const features = [
       empresas: {
         title: 'Empresas',
         list: [
-          {id: 1, description: 'Charadia Apicultura', logo: '/logos/logoCharadia.jpeg'}, 
-          {id: 2, description: 'COADELPA', logo: '/logos/logoCOADELPA.jpg'}
+          {id: 1, description: 'Charadia Apicultura', logo: '/production/company/logoCharadia.jpeg'}, 
+          {id: 2, description: 'COADELPA', logo: '/production/company/logoCOADELPA.jpg'}
         ]
       }
     },
@@ -16,7 +16,7 @@ export const features = [
       empresas: {
         title: 'Empresas',
         list: [
-          {id: 1, description: 'Mielaq', logo: '/logos/logoMielaq.jpg'}  
+          {id: 1, description: 'Mielaq', logo: '/production/company/logoMielaq.jpg'}  
         ]
       }
     },
@@ -26,9 +26,23 @@ export const features = [
       empresas: {
         title: 'Empresas',
         list: [
-          {id: 1, description: 'Diego Bessone Apicultura', logo: '/logos/logoBessone.jpg'}  
+          {id: 1, description: 'Diego Bessone Apicultura', logo: '/production/company/logoBessone.jpg'}  
         ]
       }
     }
   ];
-  
+ 
+export const companySupport = [
+  {
+    id: 1,
+    src:'/production/companySupport/logoAA.png',
+  },
+    {
+      id: 2,
+      src:'/production/companySupport/logoICBC.png',
+    },
+    {
+      id: 3,
+      src:'/production/companySupport/logoICBC.png',
+    }
+  ];

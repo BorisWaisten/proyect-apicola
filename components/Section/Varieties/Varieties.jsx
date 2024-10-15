@@ -40,15 +40,15 @@ const Varieties = () => {
   return (
     <section className="py-12 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-12 text-title font-title">Variedades de Miel</h2>
-        <nav className="mb-12">
+        <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-center mb-12 text-title font-title">Variedades de Miel</h2>
+        <nav >
           {/* Navegación de variedades */}
           <ul className="flex justify-center space-x-4">
             {varieties.map((variety, index) => (
               <li key={variety.id}>
                 <button
                   onClick={() => setActiveVariety(index)}
-                  className={`px-4 py-2 text-lg font-semibold transition-colors duration-300 rounded-lg ${
+                  className={`px-4 py-2  text-xs sm:text-xs md:text-md lg:text-lg font-semibold transition-colors duration-300 rounded-lg ${
                     index === activeVariety
                       ? 'bg-primary text-white shadow-lg'
                       : 'text-gray-600 hover:text-primary hover:bg-terciary'
@@ -61,7 +61,7 @@ const Varieties = () => {
           </ul>
         </nav>
         <div className="relative p-8 ">
-          <p className="text-center text-lg mb-8">{varieties[activeVariety].description}</p>
+          <p className="text-center text-xs sm:text-sm md:text-md lg:text-lg w-[70vw] sm:w-[80vw] md:w-[80vw] lg:w-[90vw] mx-auto mb-8">{varieties[activeVariety].description}</p>
 
           {/* Productos */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

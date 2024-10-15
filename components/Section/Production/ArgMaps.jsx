@@ -3,7 +3,7 @@ import './production.css';
 export default function ArgMaps({handleClick}) {
 
     return (
-        <svg  fill="#4b5563" className="w-full" height="500" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" version="1.2" viewBox="0 0 1000 1000" width="1000" xmlns="http://www.w3.org/2000/svg">
+        <svg  fill="#4b5563" className="w-full h-[40vh]" height="500" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" version="1.2" viewBox="150 100 800 300" width="1000" xmlns="http://www.w3.org/2000/svg">
         <g id="features" >
         <path 
             onClick={() => handleClick("1")}
