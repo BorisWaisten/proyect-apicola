@@ -4,14 +4,16 @@
 
 /* Definición de variables globales */
 :root {
-  --primary: #ffd414ed; /* Amarillo con transparencia */
+  --primary: rgb(255, 222, 89); /* Amarillo con transparencia */
   --secondary: #f3f4f6;/* Gris claro */
-  --terciary:#4b5563;
+  --terciary:#737373;
+  --cuarteto:#111827;
+  --title: #111827;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: rgba(255, 212, 20, 0.93); /* O puedes definir un tono diferente para el modo oscuro */
+    --primary: rgb(255, 222, 89); /* O puedes definir un tono diferente para el modo oscuro */
     --secondary: #f3f4f6;
   }
 }

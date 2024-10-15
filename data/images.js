@@ -15,4 +15,12 @@ export const certificates = [
     id: 4,
     src:'/certificates/logoSenasa.png',
     },
+    {
+    id: 5,
+    src:'/certificates/logoAA.png',
+    },
+    {
+        id: 6,
+        src:'/certificates/logoICBC.png',
+    },
 ]

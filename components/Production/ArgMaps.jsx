@@ -2,9 +2,8 @@ import './production.css';
 
 export default function ArgMaps({handleClick}) {
 
-
     return (
-        <svg baseprofile="tiny" fill="#4b5563" className="w-full" height="500" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1" version="1.2" viewbox="0 0 1000 1000" width="1000" xmlns="http://www.w3.org/2000/svg">
+        <svg  fill="#4b5563" className="w-full" height="500" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" version="1.2" viewBox="0 0 1000 1000" width="1000" xmlns="http://www.w3.org/2000/svg">
         <g id="features" >
         <path 
             onClick={() => handleClick("1")}
@@ -20,19 +19,19 @@ export default function ArgMaps({handleClick}) {
         </path>
         </g>
         <g id="points">
-        <circle class="-53.388761971521205|-72.57718028312743" cx="314.4" cy="895.6" id="0">
+        <circle className="-53.388761971521205|-72.57718028312743" cx="314.4" cy="895.6" id="0">
         </circle>
-        <circle class="-40.0827306949665|-62.62158638921582" cx="520.6" cy="490.5" id="1">
+        <circle className="-40.0827306949665|-62.62158638921582" cx="520.6" cy="490.5" id="1">
         </circle>
-        <circle class="-23.450191599273108|-54.65711127408653" cx="685.6" cy="82.8" id="2">
+        <circle className="-23.450191599273108|-54.65711127408653" cx="685.6" cy="82.8" id="2">
         </circle>
         </g>
         <g id="label_points">
-        <circle class="Entre Ríos" cx="588.8" cy="287.9" id="ARE">
+        <circle className="Entre Ríos" cx="588.8" cy="287.9" id="ARE">
         </circle>
-        <circle class="Santa Fe" cx="558.1" cy="240.4" id="ARS">
+        <circle className="Santa Fe" cx="558.1" cy="240.4" id="ARS">
         </circle>
-        <circle class="Córdoba" cx="500.2" cy="279.7" id="ARX">
+        <circle className="Córdoba" cx="500.2" cy="279.7" id="ARX">
         </circle>
         </g>
         </svg>

@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   const [isNavbarVisible, setIsNavbarVisible] = useState(true);
 
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
         <LanguageProvider> {/* Asegúrate de que LanguageProvider envuelva toda la app */}
           <Navbar sections={sectionsNav} />

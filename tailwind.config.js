@@ -10,11 +10,18 @@ module.exports = {
       colors: {
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
+        terciary: 'var(--terciary)',
+        cuarteto: 'var(--cuarteto)',
       },
       textColor: {
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',
         terciary: 'var(--terciary)',
+        title: 'var(--title)',
+      },
+      fontFamily: {
+        title: ['Playfair Display', 'serif',],
+        body: ['Lato', 'sans-serif'],
       },
     },
   },

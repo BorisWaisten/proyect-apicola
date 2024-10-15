@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
+import LanguageToggle from './LanguageToggle';
 
 export default function Navbar({ sections }) {
   const { language, toggleLanguage } = useLanguage();
@@ -27,38 +28,38 @@ export default function Navbar({ sections }) {
   const navItems = sections[language] || {};
 
   return (
-    <nav className={`fixed top-0 left-0 w-full bg-primary shadow-md p-4 text-white z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}>
+    <nav
+      className={`fixed top-0 left-0 w-full bg-primary p-4 text-white z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <a href="/">
-              <span className="font-bold text-xl text-gray-800">B</span>
+            <a href="/" className="flex items-center">
+              <img
+                src="logos/logoCOADELPA.jpg"
+                alt="Logo"
+                className="w-[10vh]"
+              />
             </a>
           </div>
 
           {/* Navigation Links */}
-          <div className="hidden md:flex space-x-4">
+          <div className="hidden md:flex space-x-8">
             {Object.keys(navItems).map((item) => (
               <a
                 href={`#${item}`}
                 key={item}
-                className="px-4 py-2 bg-gray-800 text-white rounded-md text-sm font-medium hover:bg-gray-700"
+                className="relative px-4 py-2 text-base font-medium text-white hover:text-gray-300 after:absolute after:bg-cuarteto after:w-full after:h-0.5 after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out"
               >
                 {navItems[item]} {/* Muestra el texto correspondiente en el idioma actual */}
               </a>
             ))}
           </div>
 
-          {/* Right-side Cart and Button */}
+          {/* Right-side Language Toggle */}
           <div className="flex items-center space-x-4">
-            {/* Language Toggle Button */}
-            <button
-              onClick={toggleLanguage}
-              className="px-4 py-2 bg-gray-800 text-white rounded-md text-sm font-medium hover:bg-gray-700"
-            >
-              {language === 'es' ? 'Cambiar a Inglés' : 'Switch to Spanish'}
-            </button>
+            <LanguageToggle language={language} onLanguageToggle={toggleLanguage} />
           </div>
         </div>
       </div>

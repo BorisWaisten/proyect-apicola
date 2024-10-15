@@ -8,7 +8,7 @@ export default function HomePage() {
 
   return (
    <div>
-    <main className="min-h-screen overflow-x-hidden text-primary">
+    <main className="min-h-screen overflow-x-hidden bg-secondary font-body text-terciary">
      <div id="home">
         <Home/>
      </div>
