@@ -22,7 +22,7 @@ export const features = [
       empresas: {
         title: 'Empresas',
         list: [
-          {id: 1, description: 'Mielaq', redes: () => <><SvgWeb link="https://mielaqargentina.wixsite.com/mielaq" /><SvgInstagram link="https://www.instagram.com/mielaqnatural/" /></>, logo: '/company/logoMielaq.jpg'}  
+          {id: 1, description: 'Mielaq', redes: () => <><SvgWeb link="https://mielaqargentina.wixsite.com/mielaq" /><SvgInstagram link="https://www.instagram.com/mielaqnatural/" /></>, logo: '/company/logoMielaq.png'}  
         ]
       }
     },
