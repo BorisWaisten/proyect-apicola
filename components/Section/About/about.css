@@ -1,11 +1,20 @@
 .provinciaElegida {
     fill: #ffd414ed;
-}
-
-.provinciaElegida:hover {
-    fill: #ffd414;
-    cursor: pointer;
-    transform: scale(1.001);
     border-color: black;
     stroke-width: 2px;
-}
+  }
+  
+  .provinciaElegida:hover {
+    fill: #ffd414;
+    cursor: pointer;
+    transform: scale(1.002);
+    border-color: black;
+    stroke-width: 5px;
+  }
+  
+  /* Estilo para la provincia seleccionada */
+  .provinciaSeleccionada {
+    fill: #ff5733; /* Color distinto para la provincia seleccionada */
+    stroke-width: 3px;
+  }
+  
