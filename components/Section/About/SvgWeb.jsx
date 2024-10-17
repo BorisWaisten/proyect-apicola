@@ -1,11 +1,9 @@
-'use client'
-import { useRouter } from "next/navigation";
+
 export default function SvgWeb({link}) {
-    const router = useRouter();
     return (
         <svg 
         className=" w-[4vh] sm:w-[3vh] md:w-[5vh] lg:w-[5vh] md:h-[5vh] lg:h-[5vh] cursor-pointer"
-        onClick={() => router.push(link)}
+        onClick={() => window.open(link, '_blank')}
         height="5vh" viewBox="0 0 1024 1024" class="icon"  version="1.1" xmlns="http://www.w3.org/2000/svg">
             <path d="M128 928h768c35.3 0 64-28.7 64-64V226.2H64V864c0 35.3 28.7 64 64 64zM64 162.2v64h896v-64c0-35.3-28.7-64-64-64H128c-35.3 0-64 28.7-64 64z m96 29.8c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z m128 0c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32z" fill="#3D5AFE" />
             <path d="M160 160m-32 0a32 32 0 1 0 64 0 32 32 0 1 0-64 0Z" fill="#FFEA00" />

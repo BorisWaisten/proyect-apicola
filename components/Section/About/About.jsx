@@ -2,24 +2,35 @@
 import React, { useState } from 'react';
 import ArgMaps from "./ArgMaps";
 import { features } from "@/data/section/about";
-
 const Empresas = ({ provincia }) => (
-  <div className='shadow-lg rounded-lg text-center h-full  p-4'>
-    <h1 className="text-xl font-semibold mb-4">{provincia.name}</h1>
-    
+  <div className='shadow-lg rounded-lg text-center h-full p-4'>
+    <h1 className=" text-xl md:text-2xl lg:text-2xl font-semibold mb-4">{provincia.name}</h1>
+
     {provincia.empresas.list.map((empresa) => (
-      <div key={empresa.id} className="mb-4   h-[10vh] flex justify-center md:mx-auto md:justify-between lg:justify-between items-center">
-        {/* Logo de la empresa */}
-        <img src={empresa.logo} alt={empresa.description} className="w-[10vh] mr-4 object-contain" />
-        {/* Descripción de la empresa */}
-        <p className="w-full md:w-[15vh] lg:w-[15vh]">{empresa.description}</p>
-        {empresa.redes && (
+      <div key={empresa.id} className="grid grid-cols-3 gap-4 items-center mb-4 h-[10vh]">
+        {/* Columna 1: Logo de la empresa */}
+        <div className="flex justify-center">
+          <img src={empresa.logo} alt={empresa.description} className="w-[10vh] object-contain" />
+        </div>
+
+        {/* Columna 2: Descripción de la empresa */}
+        <div className="flex justify-center">
+          <p>{empresa.description}</p>
+        </div>
+
+        {/* Columna 3: Redes sociales */}
+        <div className="flex justify-center">
+          {empresa.redes ? (
             <empresa.redes />
-        )}
+          ) : (
+            <div className="w-full"></div> /* Espacio en blanco si no hay redes */
+          )}
+        </div>
       </div>
     ))}
   </div>
 );
+
 
 export default function About() {
   const [provincia, setProvincia] = useState(features[0]);

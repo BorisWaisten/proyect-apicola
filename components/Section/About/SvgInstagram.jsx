@@ -1,12 +1,9 @@
-'use client'
-import { useRouter } from "next/navigation";
 
 export default function SvgInstagram({ link }) {
-    const router = useRouter();
     return (
         <svg 
         className="w-[4vh] sm:w-[3vh] md:w-[5vh] lg:w-[5vh] md:h-[5vh] lg:h-[5vh] cursor-pointer"
-        onClick={() => router.push(link)}
+        onClick={() => window.open(link, '_blank')}
         height="5vh"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 551.034 551.034">
             <g id="XMLID_13_">
