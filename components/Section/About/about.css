@@ -1,0 +1,11 @@
+.provinciaElegida {
+    fill: #ffd414ed;
+}
+
+.provinciaElegida:hover {
+    fill: #ffd414;
+    cursor: pointer;
+    transform: scale(1.001);
+    border-color: black;
+    stroke-width: 2px;
+}

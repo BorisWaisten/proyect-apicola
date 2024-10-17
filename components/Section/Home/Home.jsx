@@ -12,7 +12,7 @@ export default function Home() {
   
         {/* Contenido sobre el video */}
         <div className="relative z-10 flex items-center justify-center h-full">
-          <h1 className="text-white text-4xl md:text-6xl font-bold">GAdelCA</h1>
+          <h1 className="text-white text-base sm:text-lg md:text-3xl lg:text-4xl font-bold">Grupo Apícola de la Región Centro Argentina</h1>
         </div>
   
         {/* Filtro oscuro (opcional) */}

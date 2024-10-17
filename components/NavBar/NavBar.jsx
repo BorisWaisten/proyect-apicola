@@ -38,9 +38,9 @@ export default function Navbar({ sections }) {
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
               <img
-                src="certificates/logoOrganicoArg.png"
+                src="/logoNavBar.jpg"
                 alt="Logo"
-                className=" w-[8vh] sm:w-[10vh] md:w-[10vh] lg:w-[10vh]"
+                className=" w-[8vh] sm:w-[10vh] md:w-[12vh] lg:w-[12vh] rounded-full"
               />
             </a>
           </div>

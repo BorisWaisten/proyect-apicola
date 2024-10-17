@@ -33,22 +33,21 @@ const varieties = [
     description: `La miel pura o cruda es la miel que las abejas producen sin ningún tipo de procesamiento o adición de ingredientes. Se trata de la miel más natural y saludable.`,
   },
 ];
-
 const Varieties = () => {
   const [activeVariety, setActiveVariety] = useState(0);
 
   return (
-    <section className="py-12 ">
+    <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-center mb-12 text-title font-title">Variedades de Miel</h2>
-        <nav >
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-title font-title">Variedades de Miel</h2>
+        <nav>
           {/* Navegación de variedades */}
-          <ul className="flex justify-center space-x-4">
+          <ul className="flex justify-center space-x-4 flex-wrap">
             {varieties.map((variety, index) => (
-              <li key={variety.id}>
+              <li key={variety.id} className="mb-4 sm:mb-0">
                 <button
                   onClick={() => setActiveVariety(index)}
-                  className={`px-4 py-2  text-xs sm:text-xs md:text-md lg:text-lg font-semibold transition-colors duration-300 rounded-lg ${
+                  className={`px-4 py-2 text-xs sm:text-sm md:text-base lg:text-lg font-semibold transition-colors duration-300 rounded-lg ${
                     index === activeVariety
                       ? 'bg-primary text-white shadow-lg'
                       : 'text-gray-600 hover:text-primary hover:bg-terciary'
@@ -60,8 +59,11 @@ const Varieties = () => {
             ))}
           </ul>
         </nav>
-        <div className="relative p-8 ">
-          <p className="text-center text-xs sm:text-sm md:text-md lg:text-lg w-[70vw] sm:w-[80vw] md:w-[80vw] lg:w-[90vw] mx-auto mb-8">{varieties[activeVariety].description}</p>
+
+        <div className="relative p-4">
+          <p className="text-center text-xs sm:text-sm md:text-base lg:text-lg w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[60vw] mx-auto mb-8">
+            {varieties[activeVariety].description}
+          </p>
 
           {/* Productos */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">

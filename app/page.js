@@ -3,9 +3,9 @@ import { useEffect, useState } from "react";
 import About from "@/components/Section/About/About";
 import Contact from "@/components/Section/Contact/Contact";
 import Home from "@/components/Section/Home/Home";
-import Production from "@/components/Section/Production/Production";
 import Varieties from "@/components/Section/Varieties/Varieties";
 import Loading from "@/components/Loading/Loading"; // Importar el componente de loading
+import ServicesProvided from "@/components/Section/ServicesProvided/ServicesProvided";
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,11 +32,11 @@ export default function HomePage() {
         <div id="about">
           <About />
         </div>
+        <div id="services-provided">
+          <ServicesProvided />
+        </div>
         <div id="varieties">
           <Varieties />
-        </div>
-        <div id="production">
-          <Production />
         </div>
         <div id="contact">
           <Contact />
