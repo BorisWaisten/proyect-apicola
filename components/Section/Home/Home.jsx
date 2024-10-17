@@ -3,16 +3,12 @@ export default function Home() {
     <div id="home" className="relative w-full h-screen overflow-hidden ">
       {/* Video de fondo */}
       <video
-        className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none touch-none"
+        className="absolute top-0 left-0 w-full h-full object-cover "
         src="/fondoHome3.mp4"
         autoPlay
         loop
         muted
         playsInline // Agrega playsInline para mejor comportamiento en móviles
-        style={{
-          minHeight: '100%',  // Asegura que el video siempre ocupe toda la altura
-          minWidth: '100%'    // Asegura que el video siempre ocupe toda la anchura
-        }}
       />
 
       {/* Contenido sobre el video */}
