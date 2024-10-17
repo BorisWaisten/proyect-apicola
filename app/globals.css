@@ -23,6 +23,7 @@ body {
   color: var(--primary);
   background: var(--secondary);
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 
 /* Nueva clase de utilidad */
