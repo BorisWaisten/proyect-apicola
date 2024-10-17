@@ -11,7 +11,7 @@ export default function ArgMaps({handleClick}) {
       };
 
     return (
-        <svg  fill="#4b5563" className="w-full md:w-[80vh] lg:w-[80vh] md:h-full lg:h-full" height="270" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" version="1.2" viewBox="0 150 1100 700" width="1000" xmlns="http://www.w3.org/2000/svg">
+        <svg  fill="#4b5563" className="w-full h-full md:w-[80vh] lg:w-[80vh] md:h-full lg:h-full" height="850" stroke="#000000" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" version="1.2" viewBox="0 150 1100 700" width="1000" xmlns="http://www.w3.org/2000/svg">
         <g id="features" >
         <path 
             onClick={() => handleProvinceClick("1")} // Manejar clic en la provincia
