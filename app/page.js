@@ -6,6 +6,7 @@ import Home from "@/components/Section/Home/Home";
 import Varieties from "@/components/Section/Varieties/Varieties";
 import Loading from "@/components/Loading/Loading"; // Importar el componente de loading
 import ServicesProvided from "@/components/Section/ServicesProvided/ServicesProvided";
+import Biome from "@/components/Section/Biome/Biome";
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -37,6 +38,9 @@ export default function HomePage() {
         </div>
         <div id="varieties">
           <Varieties />
+        </div>
+        <div id="biome">
+          <Biome />
         </div>
         <div id="contact">
           <Contact />

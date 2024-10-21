@@ -1,49 +1,30 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
+import { varieties } from '@/data/section/varieties';
 
-const varieties = [
-  {
-    id: 1,
-    name: 'Convencionales',
-    products: [
-      { title: 'Miel Entreriana', image: '/entrerios/er1.jpg' },
-      { title: 'Miel de Campo', image: '/entrerios/er2.png' },
-      { title: 'Miel Clásica', image: '/entrerios/er3.jpg' },
-    ],
-    description: `La miel convencional es un producto que se obtiene de la apicultura convencional, la cual se caracteriza por el uso de productos químicos en su proceso de producción.`,
-  },
-  {
-    id: 2,
-    name: 'Orgánica',
-    products: [
-      { title: 'Miel Orgánica Cordobesa', image: '/cordoba/c1.jpg' },
-      { title: 'Miel Pura Orgánica', image: '/cordoba/c2.jpg' },
-      { title: 'Miel Natural de Córdoba', image: '/cordoba/c3.jpg' },
-    ],
-    description: `La miel orgánica es un endulzante natural que se obtiene del néctar de las flores y se cosecha de las colmenas de abejas sin el uso de productos químicos.`,
-  },
-  {
-    id: 3,
-    name: 'Especial',
-    products: [
-      { title: 'Miel Especial Santafesina', image: '/santafe/sf1.jpeg' },
-      { title: 'Miel Cruda', image: '/santafe/sf2.jpeg' },
-      { title: 'Miel Multifloral', image: '/santafe/sf3.jpeg' },
-    ],
-    description: `La miel pura o cruda es la miel que las abejas producen sin ningún tipo de procesamiento o adición de ingredientes. Se trata de la miel más natural y saludable.`,
-  },
-];
-const Varieties = () => {
+const Varieties = ({ language = 'es' }) => {
   const [activeVariety, setActiveVariety] = useState(0);
+
+  // Asegúrate de que varieties[language] existe antes de intentar mapearlo
+  const selectedVarieties = varieties[language] || [];
+  console.log(varieties);
+
+  if (selectedVarieties.length === 0) {
+    
+    return <p>No hay datos disponibles para el idioma seleccionado.</p>;
+  }
 
   return (
     <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-title font-title">Variedades de Miel</h2>
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-title font-title">
+          {language === 'es' ? 'Variedades de Miel' : 'Honey Varieties'}
+        </h2>
+
+        {/* Navegación de variedades */}
         <nav>
-          {/* Navegación de variedades */}
           <ul className="flex justify-center space-x-4 flex-wrap">
-            {varieties.map((variety, index) => (
+            {selectedVarieties.map((variety, index) => (
               <li key={variety.id} className="mb-4 sm:mb-0">
                 <button
                   onClick={() => setActiveVariety(index)}
@@ -60,14 +41,15 @@ const Varieties = () => {
           </ul>
         </nav>
 
+        {/* Descripción de la variedad activa */}
         <div className="relative p-4">
           <p className="text-center text-xs sm:text-sm md:text-base lg:text-lg w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[60vw] mx-auto mb-8">
-            {varieties[activeVariety].description}
+            {selectedVarieties[activeVariety]?.description}
           </p>
 
-          {/* Productos */}
+          {/* Productos de la variedad activa */}
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-            {varieties[activeVariety].products.map((product, index) => (
+            {selectedVarieties[activeVariety]?.products.map((product, index) => (
               <div
                 key={index}
                 className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
@@ -77,8 +59,11 @@ const Varieties = () => {
                   src={product.image}
                   alt={`Producto ${index + 1}`}
                 />
+                <div className="p-4 h-[10vh] text-center">
+                  <p className=" font-medium text-cuarteto">{product.title}</p>
+                </div>
                 <div className="p-4">
-                  <p className="text-lg font-medium text-gray-800">{product.title}</p>
+                  <p className=" text-xs md:text-sm lg:text-sm ">{product.description}</p>
                 </div>
               </div>
             ))}
