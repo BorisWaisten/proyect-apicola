@@ -46,7 +46,7 @@ export default function Biome() {
             width={1600}  // Ajusta el ancho de la imagen para mayor calidad
             height={900}  // Ajusta la altura según sea necesario
             quality={100}  // Calidad máxima
-            className="w-full h-[70vh] md:h-[70vh] lg:h-[80vh] object-cover rounded-lg transition-all duration-500 transform hover:scale-105 hover:brightness-110"
+            className="w-full h-[70vh] md:h-[70vh] lg:h-[80vh] object-cover  transition-all duration-500 transform hover:scale-105 hover:brightness-110 "
             priority
           />
           

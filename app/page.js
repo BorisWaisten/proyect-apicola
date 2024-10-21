@@ -7,6 +7,9 @@ import Varieties from "@/components/Section/Varieties/Varieties";
 import Loading from "@/components/Loading/Loading"; // Importar el componente de loading
 import ServicesProvided from "@/components/Section/ServicesProvided/ServicesProvided";
 import Biome from "@/components/Section/Biome/Biome";
+import Production from "@/components/Section/Production/Production";
+import Certifications from "@/components/Section/Certifications/Certifications";
+import CompanySupport from "@/components/Section/CompanySupport/CompanySupport";
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,6 +44,15 @@ export default function HomePage() {
         </div>
         <div id="biome">
           <Biome />
+        </div>
+        <div id="production">
+          <Production />
+        </div>
+        <div id="certifications">
+          <Certifications />
+        </div>
+        <div id="company-support">
+          <CompanySupport />
         </div>
         <div id="contact">
           <Contact />
