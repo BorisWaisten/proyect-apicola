@@ -17,8 +17,8 @@ const Varieties = ({ language = 'es' }) => {
   return (
     <section className="py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-title font-title">
-          {language === 'es' ? 'Variedades de Miel' : 'Honey Varieties'}
+      <h2 className="relative text-center text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 mb-14 z-10 italic font-title ">
+        {language === 'es' ? 'Variedades de Miel' : 'Honey Varieties'}
         </h2>
 
         {/* Navegación de variedades */}

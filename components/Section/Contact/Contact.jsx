@@ -34,7 +34,7 @@ export default function Contact() {
     return (
         <div id="contact" className="flex flex-col items-center justify-center min-h-screen p-8">
             <h2 className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 z-10 font-title text-center">
-                Certificaciones
+                Contactos
             </h2>
             <p className="text-base sm:text-lg text-center text-terciary max-w-2xl mb-8">
                 Si tienes alguna consulta, puedes contactarnos por correo electrónico.
@@ -46,7 +46,7 @@ export default function Contact() {
                     <div className="relative z-10 flex flex-col items-center justify-center h-full bg-gray-900 bg-opacity-50 p-6 rounded-lg shadow-lg">
                         <h3 className="text-secondary text-xl sm:text-2xl font-bold mb-4">Información de contacto</h3>
                         <p className="text-secondary text-base sm:text-lg mb-2">
-                            <strong>Email: latinislamicbusiness@gmail.com</strong>
+                            <strong>Email: trade@argentinehoney.com</strong>
                         </p>
                         <p className="text-secondary text-base sm:text-lg mb-2">
                             <strong>Celular: +54 9 11 3524-1987</strong>

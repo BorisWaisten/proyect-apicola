@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageToggle from './LanguageToggle';

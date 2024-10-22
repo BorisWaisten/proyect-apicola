@@ -25,16 +25,21 @@ export default function Biome() {
   return (
     <div id="about" className="relative flex flex-col items-center justify-center h-auto">
       <div className="text-center w-full md:w-3/4 lg:w-3/4">
-        <h2 className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 font-title">Biome</h2>
-        <p className="relative text-xs sm:text-sm md:text-base lg:text-lg">
-          Nuestros apiarios se encuentran localizados en entornos naturales, cerca de bosques nativos y humedales de la región del Paraná y Chaco argentinos, espacios únicos naturales con gran biodiversidad, lejos de fuentes de contaminación y libres de pesticidas.
+        <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 z-10 italic font-title ">
+         Bioma
+        </h2>
+        <div className='max-w-[80vw] m-20 grid grid-cols-1 gap-4'>
+        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+        Nuestros apiarios se encuentran localizados en <b>entornos naturales</b>, cerca de <b>bosques nativos</b> y <b>humedales</b> de la región del <b>Paraná y Chaco argentinos</b>, espacios únicos naturales con gran biodiversidad, <b>lejos de fuentes de contaminación y libres de pesticidas</b>.
         </p>
-        <p className="relative text-xs sm:text-sm md:text-base lg:text-lg">
-          La Miel extraída de dicho bioma único a nivel mundial, nos permite obtener un producto milenario conocido por sus grandes propiedades medicinales, asimismo nos permite obtener una amplia variedad de mieles con diversas intensidades, aromas y colores, 100% naturales.
+        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+        La <b>Miel</b> extraída de dicho <b>bioma único a nivel mundial</b> nos permite obtener un <b>producto milenario</b> conocido por sus <b>grandes propiedades medicinales</b>. Además, nos permite obtener una <b>amplia variedad de mieles</b> con diversas <b>intensidades, aromas y colores</b>, 100% naturales.
         </p>
-        <p className="relative text-xs sm:text-sm md:text-base lg:text-lg">
-          Nuestra firme filosofía de RESPETO POR EL MEDIOAMBIENTE Y LA ALIMENTACIÓN CONSCIENTE nos llevó a elaborar mieles orgánicas y certificadas libre de gluten.
+        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+        Nuestra firme filosofía de <b>RESPETO POR EL MEDIOAMBIENTE</b> y la <b>ALIMENTACIÓN CONSCIENTE</b> nos llevó a elaborar <b>mieles orgánicas</b> y <b>certificadas libre de gluten</b>.
         </p>
+
+        </div>
       </div>
 
       {/* Carrusel de imágenes */}

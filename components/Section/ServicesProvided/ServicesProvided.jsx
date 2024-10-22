@@ -6,12 +6,12 @@ export default function ServicesProvided() {
   const [activeService, setActiveService] = useState(0);
 
   return (
-    <section className="py-12 min-h-screen bg-terciary">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary font-title">
+    <section className="py-12 min-h-screen bg-terciary text-secondary">
+      <div className="max-w-7xl text-center mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] font-bold my-5 z-10 italic font-title ">
           Servicios Brindados
         </h2>
-        <nav>
+        <nav className='my-20'>
           {/* Navegación de servicios con imágenes */}
           <ul className="grid grid-cols-3  gap-4 md:flex md:justify-center md:space-x-4 md:flex-wrap lg:flex lg:justify-center lg:space-x-4 lg:flex-wrap ">
             {services.map((service, index) => (
@@ -29,7 +29,7 @@ export default function ServicesProvided() {
                       index === activeService ? 'border-primary' : 'border-transparent hover:border-secondary'
                     }`}
                   />
-                    <h3 className="text-xs text-secondary sm:text-sm md:text-base lg:text-lg font-semibold mt-2">
+                    <h3 className="text-xs  sm:text-sm md:text-base lg:text-lg font-semibold mt-2">
                       {service.name}
                     </h3>
                 </button>
@@ -38,10 +38,10 @@ export default function ServicesProvided() {
           </ul>
         </nav>
 
-        <div className="relative p-4">
+        <div className="relative p-4 max-w-[80vw] m-20 h-[15vh]">
           {/* Descripción del servicio */}
-          <p className="text-center text-secondary text-xs sm:text-sm md:text-base lg:text-lg w-[90vw] sm:w-[80vw] md:w-[70vw] lg:w-[60vw] mx-auto mb-8">
-            {services[activeService].description}
+          <p className="relative text-center text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+          {services[activeService].description}
           </p>
         </div>
       </div>

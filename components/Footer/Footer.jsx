@@ -5,10 +5,6 @@ export default function Footer() {
                 <div>
                     <p>©2024, Grupo Apícola de la Región Centro Argentina Todos los derechos reservados.</p>
                 </div>
-                <div className="grid grid-flow-col">
-                    <p>Desarrollado por Boris Waisten</p>
-                    <p>Contacto: boriswaisten@gmail.com</p>
-                </div>
             </div>
         </footer>
     );

@@ -14,8 +14,8 @@ const Empresas = ({ provincia }) => (
         </div>
 
         {/* Columna 2: Descripción de la empresa */}
-        <div className="flex justify-center">
-          <p>{empresa.description}</p>
+        <div className="">
+          <p className='text-justify'>{empresa.description}</p>
         </div>
 
         {/* Columna 3: Redes sociales */}
@@ -42,7 +42,7 @@ export default function About() {
   return (
     <div id="about" className="relative flex flex-col items-center justify-center h-auto p-8">
       {/* Imagen de fondo con el degradado */}
-      <div className='text-center'>
+      <div className='text-center h-[70vh]'>
         <div className="absolute top-0 left-0 w-full min-h-screen">
           <img 
             src="/fondoAbout.png" 
@@ -52,12 +52,21 @@ export default function About() {
           {/* Gradiente superpuesto */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-gray-100"></div>
         </div>
-        <h2 className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 z-10 font-title">Sobre Nosotros</h2>
-        <p className="relative text-xs sm:text-sm md:text-base lg:text-lg w-[90vw] sm:w-[80vw] md:w-[70vw] text-center z-10">
-        Somos el Grupo Apícola de la Región Centro Argentina, una sólida unión de 8 empresas de apicultores locales, provenientes de tres provincias diferentes de la República Argentina. Esta colaboración estratégica nos permite combinar nuestras fortalezas y experiencia para ofrecer productos y servicios de calidad al mundo. 
-        Con más de 30 años de experiencia, desarrollamos productos apícolas en Biomas únicos y naturales, asimismo garantizamos la trazabilidad de nuestros productos y el cumplimiento de los más altos estándares de calidad, lo que nos permite un reconocimiento único a nivel nacional e internacional. 
-        Actualmente, exportamos a más de 10 países del mundo, productos naturales sin adulterantes, con sabores diferenciados y una calidad única, ofreciendo mieles de múltiples orígenes botánicos desde monofloral, cremosa, pradera, montaña, etc.
-        </p>
+          <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 z-10 italic font-title ">
+              Sobre Nosotros
+          </h2>
+          <div className='max-w-[80vw] m-20 grid grid-cols-1 gap-4'>
+            <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm  z-10">
+            Somos el <b>Grupo Apícola de la Región Centro Argentina</b>, una sólida unión de <b>ocho empresas de apicultores locales</b> provenientes de <b>tres provincias</b> diferentes de la República Argentina. Esta <b>colaboración estratégica</b> nos permite combinar nuestras fortalezas y experiencia para ofrecer productos y servicios de calidad al mundo.
+            </p>
+            <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+            Con más de <b>30 años de experiencia</b>, desarrollamos productos apícolas en <b>biomas únicos y naturales</b>, garantizando la <b>trazabilidad</b> de nuestros productos y el cumplimiento de los más altos <b>estándares de calidad</b>. Esto nos ha otorgado un <b>reconocimiento destacado</b> tanto a nivel nacional como internacional.
+            </p>
+            <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+            Actualmente, exportamos a <b>más de diez países del mundo</b>, ofreciendo <b>productos naturales sin adulterantes</b>, con <b>sabores diferenciados</b> y una calidad única. Contamos con mieles de <b>múltiples orígenes botánicos</b>, incluyendo monofloral, cremosa, pradera, montaña, entre otras variedades.
+            </p>
+          </div>
+
       </div>
 
       <div className="relative z-10 mt-8 w-full">

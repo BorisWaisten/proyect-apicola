@@ -5,7 +5,7 @@ export const sectionsNav = {
       about: 'Nosotros',
       varieties: 'Variedades',
       production: 'Producción',
-      certificates: 'Certificados',
+      certifications: 'Certificaciones',
       contact: 'Contacto',
     },
     en: {
@@ -13,7 +13,7 @@ export const sectionsNav = {
       about: 'About',
       varieties: 'Varieties',
       production: 'Production',
-      certificates: 'Certificates',
+      certifications: 'Certifications',
       contact: 'Contact',
     }
   };
