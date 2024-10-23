@@ -1,5 +1,5 @@
 'use client';
-import './contact.css'
+import './contact.css';
 
 import { useState } from 'react';
 
@@ -41,30 +41,29 @@ export default function Contact() {
                 Si tienes alguna consulta, puedes contactarnos por correo electrónico.
             </p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 w-full max-w-7xl">
-            {/* Columna 1: Información de contacto */}
-            <div className="relative mx-auto h-auto flex justify-center">
-                <div className="info relative z-10 w-[60vh] max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl flex flex-col items-center justify-center bg-terciary p-6 rounded-lg shadow-lg">
-                    <h3 className="md:absolute lg:absolute text-secondary top-5 text-sm sm:text-xl md:text-xl lg:text-xl font-bold mb-4">
-                    Información de contacto
-                    </h3>
-                    <p className="text-secondary text-xs md:text-lg lg:text-lg mb-2">
-                    <strong>Email: trade@argentinehoney.com</strong>
-                    </p>
-                    <p className="text-secondary text-xs md:text-lg lg:text-lg mb-2">
-                    <strong>Celular: +54 9 11 3524-1987</strong>
-                    </p>
+            <div className="flex flex-col items-center justify-center gap-y-8 md:gap-x-4 md:grid md:grid-cols-2 max-w-7xl">
+                {/* Columna 1: Información de contacto */}
+                <div className="w-full max-w-md flex justify-center md:justify-start md:h-full ">
+                    <div className="info flex flex-col items-center justify-center bg-terciary p-6 rounded-lg shadow-lg w-full">
+                        <h3 className="text-secondary md:text-xl font-bold mb-4">
+                            Información de contacto
+                        </h3>
+                        <p className="text-secondary text-xs md:text-lg mb-2">
+                            <strong>Email: trade@argentinehoney.com</strong>
+                        </p>
+                        <p className="text-secondary text-xs md:text-lg mb-2">
+                            <strong>Celular: +54 9 11 3524-1987</strong>
+                        </p>
+                    </div>
                 </div>
-                </div>
-
 
                 {/* Columna 2: Formulario de contacto */}
-                <div className="relative  h-auto flex justify-center">
-                    <div className="relative w-[60vh] md:w-[70vh] lg:w-[70vh] md:left-2 lg:right-14 z-10 flex flex-col items-center justify-center h-full bg-terciary p-6 rounded-lg shadow-lg">
-                        <h3 className="text-secondary text-xl sm:text-2xl font-bold mb-4">Enviar un mensaje</h3>
+                <div className="w-full max-w-md flex justify-center md:justify-start">
+                    <div className="flex flex-col items-center justify-center bg-terciary p-6 rounded-lg shadow-lg w-full">
+                        <h3 className="text-secondary text-xl font-bold mb-4">Enviar un mensaje</h3>
                         <form onSubmit={handleSubmit} className="w-full max-w-md">
                             <div className="mb-4">
-                                <label className="block text-secondary text-sm md:text-lg lg:text-lg font-bold mb-2" htmlFor="email">
+                                <label className="block text-secondary text-sm md:text-lg font-bold mb-2" htmlFor="email">
                                     Tu correo electrónico
                                 </label>
                                 <input
@@ -78,7 +77,7 @@ export default function Contact() {
                                 />
                             </div>
                             <div className="mb-4">
-                                <label className="block text-secondary text-sm md:text-lg lg:text-lg font-bold mb-2" htmlFor="message">
+                                <label className="block text-secondary text-sm md:text-lg font-bold mb-2" htmlFor="message">
                                     Mensaje
                                 </label>
                                 <textarea
