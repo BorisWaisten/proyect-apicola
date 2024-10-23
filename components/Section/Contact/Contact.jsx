@@ -1,4 +1,5 @@
 'use client';
+import './contact.css'
 
 import { useState } from 'react';
 
@@ -42,17 +43,20 @@ export default function Contact() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 w-full max-w-7xl">
             {/* Columna 1: Información de contacto */}
-                <div className="relative  mx-auto h-auto flex justify-center">
-                    <div className="relative z-10  w-[60vh] md:w-[70vh] lg:w-[70vh] md:right-2 lg:left-14 flex flex-col items-center justify-center bg-terciary p-6 rounded-lg shadow-lg">
-                        <h3 className="md:abosolute lg:absolute text-secondary md:top-6 lg:top-5 text-xl sm:text-2xl font-bold mb-4">Información de contacto</h3>
-                        <p className="text-secondary text-sm md:text-lg lg:text-lg mb-2">
-                            <strong>Email: trade@argentinehoney.com</strong>
-                        </p>
-                        <p className="text-secondary text-sm md:text-lg lg:text-lg mb-2">
-                            <strong>Celular: +54 9 11 3524-1987</strong>
-                        </p>
-                    </div>
+            <div className="relative mx-auto h-auto flex justify-center">
+                <div className="info relative z-10 w-[60vh] max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl xl:max-w-2xl flex flex-col items-center justify-center bg-terciary p-6 rounded-lg shadow-lg">
+                    <h3 className="md:absolute lg:absolute text-secondary top-5 text-sm sm:text-xl md:text-xl lg:text-xl font-bold mb-4">
+                    Información de contacto
+                    </h3>
+                    <p className="text-secondary text-xs md:text-lg lg:text-lg mb-2">
+                    <strong>Email: trade@argentinehoney.com</strong>
+                    </p>
+                    <p className="text-secondary text-xs md:text-lg lg:text-lg mb-2">
+                    <strong>Celular: +54 9 11 3524-1987</strong>
+                    </p>
                 </div>
+                </div>
+
 
                 {/* Columna 2: Formulario de contacto */}
                 <div className="relative  h-auto flex justify-center">

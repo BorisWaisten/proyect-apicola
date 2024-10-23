@@ -5,7 +5,7 @@ export default function CompanySupport({language}) {
         <div className="text-center font-title text-cuarteto mt-8">
         <h2 className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 z-10 py-8 font-title">Instituciones que nos apoyan</h2>
         </div>
-        <div className="w-[90vh] md:w-[130vh] lg:w-[150vh] mx-auto grid grid-cols-4  md:grid-cols-4 lg:grid-cols-4 gap-11 md:gap-8 lg:gap-8">
+        <div className="w-[60vh] md:w-[130vh] lg:w-[150vh] mx-auto grid grid-cols-2  md:grid-cols-4 lg:grid-cols-4 gap-11 md:gap-8 lg:gap-8">
             {
                 companySupport.map((company) => (
                     <div key={company.id} className="mx-auto  w-[20vh] h-[20vh] md:w-[20vh] md:h-[20vh] lg:w-[35vh] lg:h-[22vh] ">
