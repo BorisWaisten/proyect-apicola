@@ -1,9 +1,9 @@
 export default function Home() {
   return (
-    <div id="home" className="relative w-full h-[70vh] ">
+    <div id="home" className="relative w-full min-h-screen ">
       {/* Video de fondo */}
       <video
-        className="absolute h-[70vh] w-full object-cover"
+        className="absolute  w-full h-full object-cover"
         src="/fondoHome3.mp4"
         autoPlay
         loop

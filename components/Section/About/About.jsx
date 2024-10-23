@@ -52,10 +52,10 @@ export default function About() {
           {/* Gradiente superpuesto */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-gray-100"></div>
         </div>
-          <h2 className="relative  text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 z-10 italic font-title ">
+          <h2 className="relative  text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 lg:md:mb-20 z-10 italic font-title ">
               Sobre Nosotros
           </h2>
-          <div className='grid grid-cols-1 gap-4'>
+          <div className='grid grid-cols-1 gap-4 md:lg:mx-20'>
             <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm  z-10">
             Somos el <b>Grupo Apícola de la Región Centro Argentina</b>, una sólida unión de <b>ocho empresas de apicultores locales</b> provenientes de <b>tres provincias</b> diferentes de la República Argentina. Esta <b>colaboración estratégica</b> nos permite combinar nuestras fortalezas y experiencia para ofrecer productos y servicios de calidad al mundo.
             </p>
@@ -72,7 +72,7 @@ export default function About() {
       <div className="relative z-10 mt-8 w-full">
         <div className="grid grid-cols-1 gap-4 md:flex md:justify-center lg:flex lg:justify-center md:h-[70vh] lg:h-[70vh]">
           <div className="relative mx-auto max-w-lg flex justify-center argentina-flag-background border-terciary border-2">
-            <p className="absolute right-2 top-2 border-2 border-tertiary rounded-tl-lg rounded-r-lg animate-flash">
+            <p className="absolute text-xs sm:text-sm md:text-sm lg:text-sm right-2 top-2 border-2 border-tertiary rounded-tl-lg rounded-r-lg animate-flash">
               ¡Haz click en el mapa!
             </p>
             <ArgMaps handleClick={handleClick} />

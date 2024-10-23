@@ -5,7 +5,7 @@ export default function Certifications() {
             <div className="text-center font-title text-cuarteto mt-8">
             <h2 className="relative text-xl py-8 sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 z-10 font-title">Certificaciones</h2>
             </div>
-            <div className="w-[40vh] sm:w-[120vh] md:w-[140vh] lg:w-[185vh] mx-auto grid grid-cols-3 md:grid-cols-8 lg:grid-cols-8 ">
+            <div className="w-[40vh] sm:w-[90vh] md:w-[140vh] lg:w-[185vh] mx-auto grid grid-cols-3 md:grid-cols-8 lg:grid-cols-8 ">
                 {
                     certificates.map((certificate) => (
                         <div key={certificate.id} className="mb-8">

@@ -1,7 +1,7 @@
 export const certificates = [
     {
     id: 1,
-    name: 'Organico Argentina',
+    name: 'Orgánico Argentina',
     src:'/certificates/logoOrganicoArg.png',
     },
     {
@@ -11,12 +11,12 @@ export const certificates = [
     },
     {
         id: 9,
-        name: 'Organico Union Europea',
+        name: 'Orgánico Union Europea',
         src:'/certificates/logoOrganicoUE.png',
     },
     {
         id: 7,
-        name: 'Certificacion Food Safety',
+        name: 'Certificación Food Safety',
         src:'/certificates/logoFS.png',
     },
     {
@@ -26,7 +26,7 @@ export const certificates = [
     },
     {
         id: 10,
-        name: 'Certificacion Buenas Prácticas de Manufactura',
+        name: 'Certificación Buenas Prácticas de Manufactura',
         src:'/certificates/logoBPM.jpg',
     },
     {
