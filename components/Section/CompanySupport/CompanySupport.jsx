@@ -8,7 +8,7 @@ export default function CompanySupport({language}) {
         <div className="w-[40vh] sm:w-[100vh] md:w-[130vh] lg:w-[150vh] mx-auto grid grid-cols-2  sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-11 md:gap-8 lg:gap-8">
             {
                 companySupport.map((company) => (
-                    <div key={company.id} className="mx-auto  w-[15vh] h-[20vh] sm:w-[20vh] sm:h-[20vh] md:w-[20vh] md:h-[20vh] lg:w-[35vh] lg:h-[22vh] ">
+                    <div key={company.id} className="mx-auto  w-[15vh] h-[25vh] sm:w-[20vh] sm:h-[20vh] md:w-[20vh] md:h-[20vh] lg:w-[35vh] lg:h-[22vh] ">
                         { company.id === 4 &&
                             <div className="mx-auto w-[15vh] h-[12vh] sm:w-[15vh] sm:h-[12vh] md:w-[25vh] md:h-[15vh] lg:w-[25vh] lg:h-[15vh] scale-150 sm:scale-200 ">
                             <   img src={company.src} alt={company.name} className=" w-full h-[12vh] object-fill" />
