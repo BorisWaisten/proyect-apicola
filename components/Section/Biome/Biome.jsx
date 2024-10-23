@@ -28,14 +28,14 @@ export default function Biome() {
         <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 z-10 italic font-title ">
          Bioma
         </h2>
-        <div className='max-w-[80vw] m-20 grid grid-cols-1 gap-4'>
-        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+        <div className='max-w-[80vw] mx-auto grid grid-cols-1 gap-4'>
+        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm z-10">
         Nuestros apiarios se encuentran localizados en <b>entornos naturales</b>, cerca de <b>bosques nativos</b> y <b>humedales</b> de la región del <b>Paraná y Chaco argentinos</b>, espacios únicos naturales con gran biodiversidad, <b>lejos de fuentes de contaminación y libres de pesticidas</b>.
         </p>
-        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm  z-10">
         La <b>Miel</b> extraída de dicho <b>bioma único a nivel mundial</b> nos permite obtener un <b>producto milenario</b> conocido por sus <b>grandes propiedades medicinales</b>. Además, nos permite obtener una <b>amplia variedad de mieles</b> con diversas <b>intensidades, aromas y colores</b>, 100% naturales.
         </p>
-        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm  z-10">
         Nuestra firme filosofía de <b>RESPETO POR EL MEDIOAMBIENTE</b> y la <b>ALIMENTACIÓN CONSCIENTE</b> nos llevó a elaborar <b>mieles orgánicas</b> y <b>certificadas libre de gluten</b>.
         </p>
 

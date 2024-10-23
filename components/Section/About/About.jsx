@@ -47,22 +47,22 @@ export default function About() {
           <img 
             src="/fondoAbout.png" 
             alt="fondoAbout" 
-            className="w-full h-full object-cover opacity-50" 
+            className="w-full min-h-screen object-cover opacity-50" 
           />
           {/* Gradiente superpuesto */}
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-gray-100"></div>
         </div>
-          <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 z-10 italic font-title ">
+          <h2 className="relative  text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 z-10 italic font-title ">
               Sobre Nosotros
           </h2>
-          <div className='max-w-[80vw] m-20 grid grid-cols-1 gap-4'>
+          <div className='grid grid-cols-1 gap-4'>
             <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm  z-10">
             Somos el <b>Grupo Apícola de la Región Centro Argentina</b>, una sólida unión de <b>ocho empresas de apicultores locales</b> provenientes de <b>tres provincias</b> diferentes de la República Argentina. Esta <b>colaboración estratégica</b> nos permite combinar nuestras fortalezas y experiencia para ofrecer productos y servicios de calidad al mundo.
             </p>
-            <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+            <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm  z-10">
             Con más de <b>30 años de experiencia</b>, desarrollamos productos apícolas en <b>biomas únicos y naturales</b>, garantizando la <b>trazabilidad</b> de nuestros productos y el cumplimiento de los más altos <b>estándares de calidad</b>. Esto nos ha otorgado un <b>reconocimiento destacado</b> tanto a nivel nacional como internacional.
             </p>
-            <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm lg:w-full sm:w-[80vw] md:w-[70vw] z-10">
+            <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm  z-10">
             Actualmente, exportamos a <b>más de diez países del mundo</b>, ofreciendo <b>productos naturales sin adulterantes</b>, con <b>sabores diferenciados</b> y una calidad única. Contamos con mieles de <b>múltiples orígenes botánicos</b>, incluyendo monofloral, cremosa, pradera, montaña, entre otras variedades.
             </p>
           </div>
