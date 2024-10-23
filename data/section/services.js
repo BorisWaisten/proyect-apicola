@@ -2,7 +2,7 @@ export const services = [
     {
       id: 1,
       name: 'Producción',
-      description: `Producción natural en nuestros propios apiarios. Nos comprometemos a producir garantizando una producción sana y segura mediante la prohibición de antibióticos en las colmenas y el cuidado de su buen estado nutricional.`,
+      description: `Poseemos nuestros propios apiarios, nos comprometemos a producir garantizando una producción sana y segura mediante la prohibición de antibióticos en las colmenas y el cuidado de su buen estado nutricional.`,
       image: '/logos/extraccion.png',
     },
     {

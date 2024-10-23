@@ -13,7 +13,7 @@ export default function Home() {
 
       {/* Contenido sobre el video */}
       <div className="absolute top-0 left-0 w-full z-10 flex items-center justify-center h-full">
-        <h1 className="text-white text-base sm:text-lg md:text-3xl lg:text-4xl font-bold text-center">
+        <h1 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-secondary font-bold my-5 z-10 font-title ">
           Grupo Apícola de la Región Centro Argentina
         </h1>
       </div>
