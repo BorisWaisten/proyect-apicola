@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      scale: {
+        '200': '2.5', // Valor personalizado para `scale-200`
+      },
       colors: {
         primary: 'var(--primary)',
         secondary: 'var(--secondary)',

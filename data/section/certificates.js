@@ -20,11 +20,6 @@ export const certificates = [
         src:'/certificates/logoFS.png',
     },
     {
-        id: 8,
-        name: 'Certificacion HALAL',
-        src:'/certificates/logoHALAL.png',
-    },
-    {
     id: 2,   
     name: 'Sin TACC',
     src:'/certificates/logoSinTacc.png',
@@ -38,5 +33,10 @@ export const certificates = [
         id: 11,
         name: ' Análisis de Peligros y de Puntos Críticos de Control',
         src:'/certificates/logoHACCP.png',
+    },
+    {
+        id: 8,
+        name: 'Certificacion HALAL',
+        src:'/certificates/logoHALAL.png',
     },
 ]
