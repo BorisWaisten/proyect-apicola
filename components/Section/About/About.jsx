@@ -15,7 +15,7 @@ const Empresas = ({ provincia }) => (
 
         {/* Columna 2: Descripción de la empresa */}
         <div className="">
-          <p className='text-justify'>{empresa.description}</p>
+          <p className='text-center'>{empresa.description}</p>
         </div>
 
         {/* Columna 3: Redes sociales */}
@@ -71,7 +71,10 @@ export default function About() {
 
       <div className="relative z-10 mt-8 w-full">
         <div className="grid grid-cols-1 gap-4 md:flex md:justify-center lg:flex lg:justify-center md:h-[70vh] lg:h-[70vh]">
-          <div className="relative mx-auto max-w-lg flex justify-center">
+          <div className="relative mx-auto max-w-lg flex justify-center argentina-flag-background border-terciary border-2">
+            <p className="absolute right-2 top-2 border-2 border-tertiary rounded-tl-lg rounded-r-lg animate-flash">
+              ¡Haz click en el mapa!
+            </p>
             <ArgMaps handleClick={handleClick} />
           </div>
           <div className=' mx-auto w-full h-auto md:w-[40vw]  md:h-full lg:h-full lg:w-[40vw]'>
