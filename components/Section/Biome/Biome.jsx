@@ -4,22 +4,42 @@ import React, { useState } from 'react'
 import Image from 'next/image';
 
 export default function Biome() {
-  const images = [
-    '/images/biome6.jpeg',
-    '/images/biome7.jpg',
-    '/images/biome9.jpg',
-    '/images/biome3.jpg',
-    '/images/biome10.jpg',
+  const biomes = [
+    {
+      id: 1,
+      name: 'Bosques Nativos Centro Argentina',
+      src:'/images/biome6.jpeg',
+    },
+    {
+      id: 2,
+      name: 'Campos de Cordoba',
+      src:'/images/biome1.jpg',
+    },
+    {
+      id: 3,
+      name: 'Campos de Santa Fe',
+      src:'/images/biome2.webp',
+    },
+    {
+      id: 3,
+      name: 'Bosques Nativos de Entre Rios',
+      src:'/images/biome4.jpg',
+    },
+    {
+      id: 3,
+      name: 'Campos de Santa Fe',
+      src:'/images/biome10.jpg',
+    },
   ];
 
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handlePrev = () => {
-    setActiveIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
+    setActiveIndex((prevIndex) => (prevIndex === 0 ? biomes.length - 1 : prevIndex - 1));
   };
 
   const handleNext = () => {
-    setActiveIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1));
+    setActiveIndex((prevIndex) => (prevIndex === biomes.length - 1 ? 0 : prevIndex + 1));
   };
 
   return (
@@ -46,18 +66,18 @@ export default function Biome() {
       <div className="relative w-full  mt-8 ">
         <div className="overflow-hidden relative">
         <Image
-            src={images[activeIndex]}
+            src={biomes[activeIndex]}
             alt={`Biome image ${activeIndex + 1}`}
             width={1600}  // Ajusta el ancho de la imagen para mayor calidad
             height={900}  // Ajusta la altura según sea necesario
             quality={100}  // Calidad máxima
-            className="w-full h-[40vh] md:h-[70vh] lg:h-[80vh] object-cover  transition-all duration-500 transform hover:scale-105 hover:brightness-110 "
+            className="w-full h-[40vh] md:h-[70vh] lg:h-[80vh] object-cover lg:object-fill transition-all duration-500 transform hover:scale-105 hover:brightness-110 "
             priority
           />
           
           {/* Indicadores sobre la imagen */}
           <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
-            {images.map((_, index) => (
+            {biomes.map((_, index) => (
               <button
                 key={index}
                 className={`w-3 h-3 rounded-full ${activeIndex === index ? 'bg-primary' : 'bg-gray-300'}`}

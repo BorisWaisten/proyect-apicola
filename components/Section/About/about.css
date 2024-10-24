@@ -1,22 +1,23 @@
 .provinciaElegida {
-    fill: #ffd414;
-    stroke-width: 2px;
-  }
-  
-  .provinciaElegida:hover {
-    fill: #ff5733;
-    cursor: pointer;
-    stroke-width: 2px;
-    stroke: white;
+  fill: #ffd414;
+  stroke-width: 2px;
+  stroke: rgb(0, 0, 0);
+}
 
-  }
-  
-  /* Estilo para la provincia seleccionada */
-  .provinciaSeleccionada {
-    fill: #ff5733; /* Color distinto para la provincia seleccionada */
-    stroke-width: 2px;
-    stroke: white;
-  }
+.provinciaElegida:hover {
+  fill: #ff5733;
+  cursor: pointer;
+  stroke-width: 2px;
+  stroke: rgb(0, 0, 0);
+
+}
+
+/* Estilo para la provincia seleccionada */
+.provinciaSeleccionada {
+  fill: #ff5733; /* Color distinto para la provincia seleccionada */
+  stroke-width: 2px;
+  stroke: rgb(0, 0, 0);
+}
   
   .argentina-flag-background {
     background: linear-gradient(
