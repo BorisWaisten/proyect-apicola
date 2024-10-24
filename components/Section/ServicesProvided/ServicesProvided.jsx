@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { services } from '@/data/section/services';
+import Image from 'next/image';
 
 export default function ServicesProvided() {
   const [activeService, setActiveService] = useState(0);
@@ -25,7 +26,9 @@ export default function ServicesProvided() {
                     index === activeService ? 'scale-105' : 'scale-100 hover:scale-105'
                   }`}
                 >
-                  <img
+                  <Image
+                    width={80}
+                    height={80}
                     src={service.image}
                     alt={service.name}
                     className={`w-[10vh]  h-[10vh] sm:w-[12vh] sm:h-[12vh] md:w-[10vh] md:h-[10vh] lg:w-[12vh] lg:h-[12vh] object-cover rounded-full border-2 ${

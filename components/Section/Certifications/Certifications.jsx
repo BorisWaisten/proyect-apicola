@@ -12,7 +12,14 @@ export default function Certifications() {
                     certificates.map((certificate) => (
                         <div key={certificate.id} className="px-2 mb-5">
                             <div className="mx-auto w-[5vh] h-[8vh] sm:w-[8vh] sm:h-[8vh] md:w-[8vh] md:h-[8vh] lg:w-[8vh] lg:h-[8vh]">  
-                                <img src={certificate.src} alt={certificate.name} className="w-full h-auto mx-auto"/>
+                                <Image 
+                                    src={certificate.src} 
+                                    alt={certificate.name} 
+                                    width={80} // Ajusta el ancho según tus necesidades
+                                    height={80} // Ajusta la altura según tus necesidades
+                                    className="w-full h-auto mx-auto"
+                                    quality={80} // Ajusta la calidad de la imagen
+                                />
                             </div>
                             <p className="text-center mt-2 sm:mt-4 text-[0.7rem] sm:text-xs md:text-sm lg:text-sm">{certificate.name}</p>
                         </div>

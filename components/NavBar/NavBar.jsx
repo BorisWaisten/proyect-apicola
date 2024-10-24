@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image'; // Importar el componente Image de Next.js
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageToggle from './LanguageToggle';
 
@@ -43,20 +44,24 @@ export default function Navbar({ sections }) {
       className={`fixed top-0 left-0 w-full bg-primary text-white z-50 transition-transform duration-500 ${showNavbar ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between   h-[12vh] sm:h-[12vh] md:h-[15vh] lg:h-[15vh] items-center">
+        <div className="flex justify-between h-[12vh] sm:h-[12vh] md:h-[15vh] lg:h-[15vh] items-center">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
-              <img
+              <Image
                 src="/logoNavBar.jpg"
                 alt="Logo"
-                className=" w-[8vh] sm:w-[10vh] md:w-[12vh] lg:w-[12vh] rounded-full"
+                width={120} // Ajusta el tamaño según el diseño
+                height={120} // Ajusta el tamaño según el diseño
+                className="w-[8vh] sm:w-[10vh] md:w-[12vh] lg:w-[12vh] rounded-full"
+                quality={100} // Define la calidad de la imagen
+                priority={true} // Prioriza la carga de la imagen
               />
             </a>
           </div>
 
           {/* Menú de Navegación (Responsive) */}
-          <div className="hidden  md:flex space-x-8">
+          <div className="hidden md:flex space-x-8">
             {Object.keys(navItems).map((item) => (
               <a
                 href={`#${item}`}
@@ -123,7 +128,7 @@ export default function Navbar({ sections }) {
       {/* Menú móvil desplegable */}
       {isMobileMenuOpen && (
         <div className="md:hidden">
-          <div className="px-2  space-y-1 sm:px-3">
+          <div className="px-2 space-y-1 sm:px-3">
             {Object.keys(navItems).map((item) => (
               <a
                 href={`#${item}`}

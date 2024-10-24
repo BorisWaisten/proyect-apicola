@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { productionSteps } from '@/data/section/production';
+import Image from 'next/image';
 
 
 const Production = ({ language = 'es' }) => {
@@ -46,7 +47,10 @@ const Production = ({ language = 'es' }) => {
           <div className="py-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {selectedSteps[activeStep]?.products.map((product, index) => (
               <div key={index}>
-                <img
+                <Image
+                  width={300}
+                  height={300}
+                  quality={100}
                   className="w-full h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[50vh] object-cover shadow-md rounded-lg shadow-primary hover:shadow-xl transition-shadow duration-300 "
                   src={product.image}
                   alt={`Producto ${index + 1}`}

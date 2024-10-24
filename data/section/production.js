@@ -13,12 +13,12 @@ export const productionSteps = {
           },
           {
               title: 'Ubicación de Apiarios',
-              image: 'production/apiaries/apiaries2.jpg',
+              image: '/production/apiaries/apiaries2.jpg',
               description: 'Apiarios ubicados en regiones protegidas y libres de pesticidas.',
             },
             {
               title: 'Ubicación de Apiarios',
-              image: 'production/apiaries/apiaries4.png',
+              image: '/production/apiaries/apiaries4.png',
               description: 'Apiarios ubicados en regiones protegidas y libres de pesticidas.',
             },
         ],

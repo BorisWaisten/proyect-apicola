@@ -2,7 +2,7 @@
 export default function SvgInstagram({ link }) {
     return (
         <svg 
-        className="w-[4vh] sm:w-[3vh] md:w-[5vh] lg:w-[5vh] md:h-[5vh] lg:h-[5vh] cursor-pointer"
+        className="w-[4vh] sm:w-[4vh] md:w-[5vh] lg:w-[5vh] md:h-[5vh] lg:h-[5vh] cursor-pointer"
         onClick={() => window.open(link, '_blank')}
         height="5vh"  version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 551.034 551.034">

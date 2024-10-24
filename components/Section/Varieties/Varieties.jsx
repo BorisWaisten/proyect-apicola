@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { varieties } from '@/data/section/varieties';
+import Image from 'next/image';
 
 const Varieties = ({ language = 'es' }) => {
   const [activeVariety, setActiveVariety] = useState(0);
@@ -54,7 +55,9 @@ const Varieties = ({ language = 'es' }) => {
                 key={index}
                 className="bg-primary rounded-lg shadow-md shadow-terciary hover:shadow-xl transition-shadow duration-300 overflow-hidden"
               >
-                <img
+                <Image
+                  width={300}
+                  height={300}
                   className="w-full h-48 object-cover"
                   src={product.image}
                   alt={`Producto ${index + 1}`}
