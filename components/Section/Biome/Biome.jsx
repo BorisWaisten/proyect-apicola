@@ -66,15 +66,14 @@ export default function Biome() {
       <div className="relative w-full  mt-8 ">
         <div className="overflow-hidden relative">
         <Image
-            src={biomes[activeIndex]}
-            alt={`Biome image ${activeIndex + 1}`}
-            width={1600}  // Ajusta el ancho de la imagen para mayor calidad
-            height={900}  // Ajusta la altura según sea necesario
-            quality={100}  // Calidad máxima
-            className="w-full h-[40vh] md:h-[70vh] lg:h-[80vh] object-cover lg:object-fill transition-all duration-500 transform hover:scale-105 hover:brightness-110 "
-            priority
-          />
-          
+          src={biomes[activeIndex].src}  // Cambia aquí: accede solo a la propiedad src
+          alt={biomes[activeIndex].name || `Biome image ${activeIndex + 1}`}
+          width={1600}  // Ajusta el ancho de la imagen para mayor calidad
+          height={900}  // Ajusta la altura según sea necesario
+          quality={100}  // Calidad máxima
+          className="w-full h-[40vh] md:h-[70vh] lg:h-[80vh] object-cover lg:object-fill transition-all duration-500 transform hover:scale-105 hover:brightness-110"
+          priority
+        />          
           {/* Indicadores sobre la imagen */}
           <div className="absolute bottom-4 left-0 right-0 flex justify-center space-x-2">
             {biomes.map((_, index) => (
