@@ -47,7 +47,7 @@ const Production = ({ language = 'es' }) => {
             {selectedSteps[activeStep]?.products.map((product, index) => (
               <div key={index}>
                 <img
-                  className="w-full h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[50vh] object-cover shadow-md rounded-lg shadow-primary"
+                  className="w-full h-[30vh] sm:h-[40vh] md:h-[50vh] lg:h-[50vh] object-cover shadow-md rounded-lg shadow-primary hover:shadow-xl transition-shadow duration-300 "
                   src={product.image}
                   alt={`Producto ${index + 1}`}
                 />     

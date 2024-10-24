@@ -15,7 +15,7 @@ const Varieties = ({ language = 'es' }) => {
   }
 
   return (
-    <section className="py-12">
+    <section className="py-12 ">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <h2 className="relative text-center text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 mb-14 z-10 italic font-title ">
         {language === 'es' ? 'Variedades de Miel' : 'Honey Varieties'}
@@ -48,11 +48,11 @@ const Varieties = ({ language = 'es' }) => {
           </p>
 
           {/* Productos de la variedad activa */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="text-terciary grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {selectedVarieties[activeVariety]?.products.map((product, index) => (
               <div
                 key={index}
-                className="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
+                className="bg-primary rounded-lg shadow-md shadow-terciary hover:shadow-xl transition-shadow duration-300 overflow-hidden"
               >
                 <img
                   className="w-full h-48 object-cover"

@@ -42,7 +42,7 @@ export default function About() {
   return (
     <div id="about" className="relative flex flex-col items-center justify-center h-auto p-8">
       {/* Imagen de fondo con el degradado */}
-      <div className='text-center h-[70vh]'>
+      <div className='text-center '>
         <div className="absolute top-0 left-0 w-full min-h-screen">
           <img 
             src="/fondoAbout.png" 
@@ -69,7 +69,7 @@ export default function About() {
 
       </div>
 
-      <div className="relative z-10 mt-8 w-full">
+      <div className="relative z-10 mt-10 md:mt-14 lg:mt-20 w-full">
         <div className="grid grid-cols-1 gap-4 md:flex md:justify-center lg:flex lg:justify-center md:h-[70vh] lg:h-[70vh]">
           <div className="relative mx-auto max-w-lg flex justify-center argentina-flag-background border-terciary border-2">
             <p className="absolute text-xs sm:text-sm md:text-sm lg:text-sm right-2 top-2 border-2 border-tertiary rounded-tl-lg rounded-r-lg animate-flash">

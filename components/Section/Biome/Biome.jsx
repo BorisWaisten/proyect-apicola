@@ -24,7 +24,7 @@ export default function Biome() {
 
   return (
     <div id="about" className="relative flex flex-col items-center justify-center h-auto ">
-      <div className="text-center w-full ">
+      <div className="text-center w-full px-8 md:px-8 lg:px-0">
         <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 md:lg:mb-20 z-10 italic font-title ">
          Bioma
         </h2>
@@ -51,7 +51,7 @@ export default function Biome() {
             width={1600}  // Ajusta el ancho de la imagen para mayor calidad
             height={900}  // Ajusta la altura según sea necesario
             quality={100}  // Calidad máxima
-            className="w-full h-[70vh] md:h-[70vh] lg:h-[80vh] object-cover  transition-all duration-500 transform hover:scale-105 hover:brightness-110 "
+            className="w-full h-[40vh] md:h-[70vh] lg:h-[80vh] object-cover  transition-all duration-500 transform hover:scale-105 hover:brightness-110 "
             priority
           />
           
