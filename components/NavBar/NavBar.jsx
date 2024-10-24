@@ -11,9 +11,17 @@ export default function Navbar({ sections }) {
 
   useEffect(() => {
     let prevScrollPos = window.pageYOffset;
-
+    const scrollThreshold = 10; // Umbral mínimo para activar el scroll
+  
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
+  
+      // Si estás cerca de la parte superior, mantén el navbar visible
+      if (currentScrollPos < scrollThreshold) {
+        setShowNavbar(true);
+        return;
+      }
+  
       if (prevScrollPos > currentScrollPos) {
         setShowNavbar(true);
       } else {
@@ -21,10 +29,11 @@ export default function Navbar({ sections }) {
       }
       prevScrollPos = currentScrollPos;
     };
-
+  
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
 
   // Asignar las secciones en base al idioma
   const navItems = sections[language] || {};
