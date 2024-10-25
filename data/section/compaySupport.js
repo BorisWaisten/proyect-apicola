@@ -7,12 +7,12 @@ export const companySupport = [
     {
       id: 1,
       name: 'Agencia Argentina de Inversiones y Comercio Internacional (AAIC)',
-      src:'/companySupport/logoAA.svg',
+      src:'/companySupport/logoAA2.svg',
     },
       {
         id: 2,
         name: 'Fundación ICBC (ICBC)',
-        src:'/companySupport/logoICBC.png',
+        src:'/companySupport/logo-ICBC-fundacion-01.png',
       },
       {
         id: 3,

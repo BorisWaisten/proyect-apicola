@@ -1,4 +1,7 @@
+import { useLanguage } from "@/context/LanguageContext";
+import { home } from "@/data/section/home";
 export default function Home() {
+  const { language} = useLanguage();
   return (
     <div id="home" className="relative w-full min-h-screen ">
       {/* Video de fondo */}
@@ -14,7 +17,7 @@ export default function Home() {
       {/* Contenido sobre el video */}
       <div className="absolute top-0 left-0 w-full z-10 flex items-center justify-center h-full">
         <h1 className="relative text-[0.9rem] sm:text-2xl md:text-4xl lg:text-[3rem] text-secondary font-bold my-5 z-10 font-title ">
-          Grupo Apícola de la Región Centro Argentina
+          {home[language].title}
         </h1>
       </div>
 
