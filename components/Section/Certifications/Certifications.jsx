@@ -1,11 +1,15 @@
 import { certificates } from "@/data/section/certificates";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Certifications() {
+    const {language} = useLanguage();
     return (
         <section className="relative overflow-hidden">
             <div className="relative z-10 text-center font-title text-cuarteto md:mt-8 lg:mt-8">
-                <h2 className="relative text-xl py-8 sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 font-title">Certificaciones</h2>
+                <h2 className="relative text-xl py-8 sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 font-title">
+                {language === 'es' ? 'Certificaciones' : 'Certifications'}    
+                </h2>
             </div>
             <div className="relative z-10 w-[40vh] sm:w-[90vh] md:w-[140vh] lg:w-[180vh] mx-auto grid grid-cols-3 md:grid-cols-8 lg:grid-cols-8">
                 {

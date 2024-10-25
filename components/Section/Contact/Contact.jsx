@@ -2,11 +2,17 @@
 import './contact.css';
 
 import { useState } from 'react';
+import { useLanguage } from '@/context/LanguageContext';
+import { translations } from '@/data/section/contact';
 
 export default function Contact() {
+    const { language } = useLanguage();
+    
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState('');
+
+    const t = translations[language] || translations['es']; // Elige las traducciones según el idioma
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -22,23 +28,23 @@ export default function Contact() {
             const result = await res.json();
 
             if (result.success) {
-                setStatus('Correo enviado exitosamente.');
+                setStatus(t.emailSentSuccess);
             } else {
-                setStatus('Error al enviar el correo.');
+                setStatus(t.emailSentError);
             }
         } catch (error) {
             console.error(error);
-            setStatus('Error al enviar el correo.');
+            setStatus(t.emailSentError);
         }
     };
 
     return (
         <div id="contact" className="flex flex-col items-center justify-center min-h-screen p-8">
             <h2 className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 z-10 font-title text-center">
-                Contacto
+                {t.contact}
             </h2>
             <p className="text-base sm:text-lg text-center text-terciary max-w-2xl mb-8">
-                Si tienes alguna consulta, puedes contactarnos por correo electrónico.
+                {t.description}
             </p>
 
             <div className="flex flex-col items-center justify-center gap-y-8 md:gap-x-4 md:grid md:grid-cols-2 max-w-7xl">
@@ -46,13 +52,13 @@ export default function Contact() {
                 <div className="w-full max-w-md flex justify-center md:justify-start md:h-full ">
                     <div className="info flex flex-col items-center justify-center bg-terciary p-6 rounded-lg shadow-lg w-full">
                         <h3 className="text-secondary md:text-xl font-bold mb-4">
-                            Información de contacto
+                            {t.contactInfo}
                         </h3>
                         <p className="text-secondary text-xs md:text-lg mb-2">
-                            <strong>Email: trade@argentinehoney.com</strong>
+                            <strong>{t.address}</strong>
                         </p>
                         <p className="text-secondary text-xs md:text-lg mb-2">
-                            <strong>Celular: +54 9 11 3524-1987</strong>
+                            <strong>{t.phone}</strong>
                         </p>
                     </div>
                 </div>
@@ -60,17 +66,17 @@ export default function Contact() {
                 {/* Columna 2: Formulario de contacto */}
                 <div className="w-full max-w-md flex justify-center md:justify-start">
                     <div className="flex flex-col items-center justify-center bg-terciary p-6 rounded-lg shadow-lg w-full">
-                        <h3 className="text-secondary text-xl font-bold mb-4">Enviar un mensaje</h3>
+                        <h3 className="text-secondary text-xl font-bold mb-4">{t.sendMessage}</h3>
                         <form onSubmit={handleSubmit} className="w-full max-w-md">
                             <div className="mb-4">
                                 <label className="block text-secondary text-sm md:text-lg font-bold mb-2" htmlFor="email">
-                                    Tu correo electrónico
+                                    {t.email}
                                 </label>
                                 <input
                                     type="email"
                                     id="email"
                                     className="w-full px-3 py-2 text-cuarteto border border-secondary rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                                    placeholder="Tu correo"
+                                    placeholder={t.emailPlaceholder}
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     required
@@ -78,13 +84,13 @@ export default function Contact() {
                             </div>
                             <div className="mb-4">
                                 <label className="block text-secondary text-sm md:text-lg font-bold mb-2" htmlFor="message">
-                                    Mensaje
+                                    {t.message}
                                 </label>
                                 <textarea
                                     id="message"
                                     rows="4"
                                     className="w-full px-3 py-2 text-cuarteto border border-secondary rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                                    placeholder="Escribe tu mensaje aquí..."
+                                    placeholder={t.messagePlaceholder}
                                     value={message}
                                     onChange={(e) => setMessage(e.target.value)}
                                     required
@@ -94,7 +100,7 @@ export default function Contact() {
                                 type="submit"
                                 className="w-full py-2 px-4 bg-blue-600 text-white font-bold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
                             >
-                                Enviar Mensaje
+                                {t.sendMessage}
                             </button>
                         </form>
                         {status && <p className="text-secondary mt-4">{status}</p>}

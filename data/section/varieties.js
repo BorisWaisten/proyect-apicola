@@ -72,17 +72,17 @@ export const varieties = {
         products: [
           {
             title: 'Organic Clover Honey',
-            image: '/varieties/convencional/vertedor1.jpg',
+            image: '/varieties/organica/mielcremauntable.jpg',
             description: 'Monofloral organic honey that preserves the essence and properties of clover, offering a sweet and smooth taste, delicate floral aroma, and fluid texture.',
           },
           {
             title: 'Organic Autumn Meadow Creamed Honey',
-            image: '/varieties/convencional/vertedor1.jpg',
+            image: '/varieties/organica/mieldeacacia.jpg',
             description: 'Organic creamed honey harvested in autumn, with a delicate aroma and taste, light fruity notes, clear color, and fine crystallization that adds creaminess.',
           },
           {
             title: 'Organic Spring Meadow Creamed Honey',
-            image: '/varieties/convencional/vertedor1.jpg',
+            image: '/varieties/organica/mieldeeucalipto.jpg',
             description: 'Creamed honey harvested in spring in the forests of the Argentine Chaco, produced without pesticides and 100% ecologically, ensuring maximum purity.',
           },
         ],
@@ -93,17 +93,17 @@ export const varieties = {
         products: [
           {
             title: 'Clover Honey',
-            image: '/varieties/convencional/vertedor1.jpg',
+            image: '/varieties/especial/mieldepradera.jpg',
             description: '100% clover flower honey that enhances the natural properties of the plant, offering a sweet and smooth taste, delicate aroma, and fluid texture.',
           },
           {
             title: 'Spring Meadow Creamed Honey',
-            image: '/varieties/convencional/vertedor1.jpg',
+            image: '/varieties/especial/suave1kg.jpg',
             description: 'Creamed honey harvested in spring in the Argentine Chaco, with a unique aroma, light fruity notes, and a clear, uniform color.',
           },
           {
             title: 'Eucalyptus Honey',
-            image: '/varieties/convencional/vertedor1.jpg',
+            image: '/varieties/especial/suave250gr.jpg',
             description: 'Honey with an intense, slightly spicy flavor, denser than other varieties, with a dark golden color and a woody aroma.',
           },
         ],
@@ -114,12 +114,12 @@ export const varieties = {
         products: [
           {
             title: 'Spring Forest Honey',
-            image: '/varieties/convencional/vertedor1.jpg',
+            image: '/varieties/convencional/intensa1.jpg',
             description: 'Honey produced in the native forest of northern Argentina, with wildflowers and a delicate flavor, as well as an intense color and brightness.',
           },
           {
             title: 'Summer Forest Honey',
-            image: '/varieties/convencional/vertedor1.jpg',
+            image: '/varieties/convencional/mielcremauntable.jpg',
             description: 'Honey from the native forest harvested in summer, with a persistent aroma, delicate flavor, and vegetal and fruity notes.',
           },
           {

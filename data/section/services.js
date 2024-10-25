@@ -1,4 +1,5 @@
-export const services = [
+export const services = {
+  es:[
     {
       id: 1,
       name: 'Producción',
@@ -35,5 +36,44 @@ export const services = [
       description: `Exportamos a más de 10 destinos internacionales, miel a granel y envasada con marcas propias y marca blanca.`,
       image: '/logos/exportacion.png',
     },
-  ];
+  ],
+  en:[
+    { 
+      id: 1,
+      name: 'Production',
+      description: `We have our own apiaries, we commit to producing ensuring a safe and healthy production by prohibiting antibiotics in the colonies and the care of their good nutritional state.`,
+      image: '/logos/extraccion.png',
+    },
+    {
+      id: 2,
+      name: 'Extraction',
+      description: `We have more than 20,000 colonies in production, distributed in the province of Entre Ríos, Santa Fe and Cordoba, Argentina, from where we obtain our own honey.`,
+      image: '/logos/extraccion.png',
+    },
+    {
+      id: 3,
+      name: 'Laboratory',
+      description: `We guarantee quality and traceability in all the production processes.`,
+      image: '/logos/laboratorio.png',    
+    },
+    {
+      id: 4,
+      name: 'Fracturing',
+      description: `We offer 1.5 kg boxes and tanks for commercialization.`,
+      image: '/logos/extraccion.png',    
+    },
+    {
+      id: 5,
+      name: 'Homogenization',
+      description: `We homogenize our honey to ensure a consistent quality in each lot.`,
+      image: '/logos/extraccion.png',    
+    },
+    {
+      id: 6,
+      name: 'Exportation',
+      description: `We export to more than 10 international destinations, honey and packed with proprietary brands and white marca.`,
+      image: '/logos/exportacion.png',    
+    },
+  ],
+}
   

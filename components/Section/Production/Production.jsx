@@ -2,9 +2,10 @@
 import React, { useState } from 'react';
 import { productionSteps } from '@/data/section/production';
 import Image from 'next/image';
+import { useLanguage } from '@/context/LanguageContext';
 
-
-const Production = ({ language = 'es' }) => {
+const Production = () => {
+  const {language,toggleLanguage} = useLanguage();
   const [activeStep, setActiveStep] = useState(0);
 
   const selectedSteps = productionSteps[language] || [];

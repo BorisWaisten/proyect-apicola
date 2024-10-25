@@ -1,12 +1,14 @@
 import { companySupport } from "@/data/section/compaySupport";
 import Image from "next/image";
+import { useLanguage } from "@/context/LanguageContext";
 
-export default function CompanySupport({ language }) {
+export default function CompanySupport() {
+    const {language} = useLanguage();
     return (
         <section className="h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] mb-7 sm:mb-0 md:mb-0 lg:mb-0">
             <div className="text-center font-title text-cuarteto md:mt-8 lg:mt-8">
                 <h2 className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold sm:mb-4 md:mb-6 lg:mb-6 z-10 py-8 font-title">
-                    Instituciones que nos apoyan
+                    {language === 'es' ? 'Instituciones que nos apoyan' : 'Institutions that support us'}
                 </h2>
             </div>
             <div className="w-[40vh] sm:w-[90vh] md:w-[150vh] lg:w-[175vh] mx-auto grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-11 md:gap-0 lg:gap-8">

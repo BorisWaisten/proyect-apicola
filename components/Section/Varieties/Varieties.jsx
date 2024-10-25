@@ -2,8 +2,10 @@
 import React, { useState } from 'react';
 import { varieties } from '@/data/section/varieties';
 import Image from 'next/image';
+import { useLanguage } from '@/context/LanguageContext';
 
-const Varieties = ({ language = 'es' }) => {
+const Varieties = () => {
+  const {language} = useLanguage();
   const [activeVariety, setActiveVariety] = useState(0);
 
   // Asegúrate de que varieties[language] existe antes de intentar mapearlo

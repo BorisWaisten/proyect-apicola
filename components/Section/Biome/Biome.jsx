@@ -2,8 +2,10 @@
 
 import React, { useState } from 'react'
 import Image from 'next/image';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Biome() {
+  const {language} = useLanguage();
   const biomes = [
     {
       id: 1,
@@ -44,23 +46,48 @@ export default function Biome() {
 
   return (
     <div id="about" className="relative flex flex-col items-center justify-center h-auto ">
-      <div className="text-center w-full px-8 md:px-8 lg:px-0">
-        <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 md:lg:mb-20 z-10 italic font-title ">
-         Bioma
-        </h2>
-        <div className='grid grid-cols-1 gap-4 md:lg:mx-20'>
+<div className="text-center w-full px-8 md:px-8 lg:px-0">
+    <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 md:lg:mb-20 z-10 italic font-title ">
+        { language === 'es' ? 'Bioma' : 'Biome'}
+    </h2>
+    <div className='grid grid-cols-1 gap-4 md:lg:mx-20'>
         <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm z-10">
-        Nuestros apiarios se encuentran localizados en <b>entornos naturales</b>, cerca de <b>bosques nativos</b> y <b>humedales</b> de la región del <b>Paraná y Chaco argentinos</b>, espacios únicos naturales con gran biodiversidad, <b>lejos de fuentes de contaminación y libres de pesticidas</b>.
+            { language === 'es' ? (
+                <>
+                    Nuestros apiarios se encuentran localizados en <b>entornos naturales</b>, cerca de <b>bosques nativos</b> y <b>humedales</b> de la región del <b>Paraná y Chaco argentinos</b>, espacios únicos naturales con gran biodiversidad, <b>lejos de fuentes de contaminación y libres de pesticidas</b>.
+                </>
+            ) : (
+                <>
+                    Our apiaries are located in <b>natural environments</b>, near <b>native forests</b> and <b>wetlands</b> in the region of <b>Argentine Paraná and Chaco</b>, unique natural spaces with great biodiversity, <b>far from sources of pollution and free from pesticides</b>.
+                </>
+            )}
         </p>
-        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm  z-10">
-        La <b>Miel</b> extraída de dicho <b>bioma único a nivel mundial</b> nos permite obtener un <b>producto milenario</b> conocido por sus <b>grandes propiedades medicinales</b>. Además, nos permite obtener una <b>amplia variedad de mieles</b> con diversas <b>intensidades, aromas y colores</b>, 100% naturales.
+        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm z-10">
+            { language === 'es' ? (
+                <>
+                    La <b>Miel</b> extraída de dicho <b>bioma único a nivel mundial</b> nos permite obtener un <b>producto milenario</b> conocido por sus <b>grandes propiedades medicinales</b>. Además, nos permite obtener una <b>amplia variedad de mieles</b> con diversas <b>intensidades, aromas y colores</b>, 100% naturales.
+                </>
+            ) : (
+                <>
+                    <b>Honey</b> extracted from this <b>unique biome on a global scale</b> allows us to obtain a <b>millenary product</b> known for its <b>great medicinal properties</b>. Additionally, it allows us to obtain a <b>wide variety of honeys</b> with different <b>intensities, aromas, and colors</b>, 100% natural.
+                </>
+            )}
         </p>
-        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm  z-10">
-        Nuestra firme filosofía de <b>RESPETO POR EL MEDIOAMBIENTE</b> y la <b>ALIMENTACIÓN CONSCIENTE</b> nos llevó a elaborar <b>mieles orgánicas</b> y <b>certificadas libre de gluten</b>.
+        <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm z-10">
+            { language === 'es' ? (
+                <>
+                    Nuestra firme filosofía de <b>RESPETO POR EL MEDIOAMBIENTE</b> y la <b>ALIMENTACIÓN CONSCIENTE</b> nos llevó a elaborar <b>mieles orgánicas</b> y <b>certificadas libre de gluten</b>.
+                </>
+            ) : (
+                <>
+                    Our firm philosophy of <b>RESPECT FOR THE ENVIRONMENT</b> and <b>CONSCIOUS EATING</b> led us to produce <b>organic honeys</b> and <b>certified gluten-free</b> honey.
+                </>
+            )}
         </p>
+    </div>
+</div>
 
-        </div>
-      </div>
+
 
       {/* Carrusel de imágenes */}
       <div className="relative w-full  mt-8 ">
