@@ -60,12 +60,13 @@ const Varieties = () => {
                 <Image
                   width={300}
                   height={300}
-                  className="w-full h-48 object-cover"
+                  quality={85}
+                  className="w-full h-auto sm:h-[30vh] md:h-[30vh] lg:h-[40vh] object-cover"
                   src={product.image}
                   alt={`Producto ${index + 1}`}
                 />
                 <div className="p-4 h-[10vh] text-center">
-                  <p className=" font-medium text-cuarteto">{product.title}</p>
+                  <p className=" font-semibold text-cuarteto">{product.title}</p>
                 </div>
                 <div className="p-4">
                   <p className=" text-xs md:text-sm lg:text-sm ">{product.description}</p>

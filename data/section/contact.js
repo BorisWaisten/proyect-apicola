@@ -11,7 +11,7 @@ export const translations = {
         emailSentSuccess: 'Email sent successfully.',
         emailSentError: 'Error sending email.',
         address:'Mail: trade@argentinehoney.com',
-        phone:'Phone: +54 9 11 3524-1987',
+        phone:'Phone: +5491140315794',
     },
     es: {
         contact: 'Contacto',
@@ -25,6 +25,6 @@ export const translations = {
         emailSentSuccess: 'Correo enviado exitosamente.',
         emailSentError: 'Error al enviar el correo.',
         address:'Email: trade@argentinehoney.com',
-        phone:'Celular: +54 9 11 3524-1987',
+        phone:'Celular: +5491140315794',
     },
 };

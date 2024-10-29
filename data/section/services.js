@@ -3,7 +3,7 @@ export const services = {
     {
       id: 1,
       name: 'Producción',
-      description: `Poseemos nuestros propios apiarios, nos comprometemos a producir garantizando una producción sana y segura mediante la prohibición de antibióticos en las colmenas y el cuidado de su buen estado nutricional.`,
+      description: `Poseemos nuestros propios apiarios, nos comprometemos a elaborar nuestras propias mieles garantizando una producción sana y segura mediante la prohibición de antibióticos en las colmenas y el cuidado de su buen estado nutricional.`,
       image: '/logos/extraccion.png',
     },
     {
@@ -41,7 +41,7 @@ export const services = {
     { 
       id: 1,
       name: 'Production',
-      description: `We have our own apiaries, we commit to producing ensuring a safe and healthy production by prohibiting antibiotics in the colonies and the care of their good nutritional state.`,
+      description: `We have our own apiaries, we commit to elaborating our own honey ensuring a safe and healthy production by prohibiting antibiotics in the colonies and the care of their good nutritional state.`,
       image: '/logos/extraccion.png',
     },
     {

@@ -64,6 +64,27 @@ export const varieties = {
           },
         ],
       },
+      {
+        id: 4,
+        name: 'A Granel',
+        products: [
+          {
+            title: 'Orgánica',
+            image: '/varieties/granel/granel5.jpeg',
+            description: 'Miel a granel orgánica de diferentes flores y fauna',
+          },
+          {
+            title: 'Convencional',
+            image: '/varieties/granel/granel3.jpg',
+            description: 'Miel a granel convencional de diferentes flores y fauna',
+          },
+          {
+            title: 'Especial',
+            image: '/varieties/granel/granel2.jpg',
+            description: 'Miel a granel especial de diferentes flores y fauna',
+          },
+        ],
+      }
     ],
     en: [
       {
@@ -129,6 +150,27 @@ export const varieties = {
           },
         ],
       },
+      {
+        id: 4,
+        name: 'Bulk',
+        products: [
+          {
+            title: 'Organic',
+            image: '/varieties/granel/granel5.jpeg',
+            description: 'Organic bulk honey from different flowers and fauna',
+          },
+          {
+            title: 'Conventional',
+            image: '/varieties/granel/granel3.jpg',
+            description: 'Conventional bulk honey from different flowers and fauna',
+          },
+          {
+            title: 'Especial',
+            image: '/varieties/granel/granel2.jpg',
+            description: 'Special bulk honey from different flowers and fauna',
+          },
+        ],
+      }
     ],
   };
   
