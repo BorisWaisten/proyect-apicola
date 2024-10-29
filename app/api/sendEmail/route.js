@@ -7,23 +7,25 @@ export async function POST(req) {
 
         // Configuración de nodemailer
         const transporter = nodemailer.createTransport({
-            service: 'gmail',
+            host: 'trade@argentinehoney.com', // Cambia esto al servidor SMTP de tu proveedor
+            port: 587, // Cambia a 465 si usas SSL en lugar de TLS
+            secure: false, // true para 465, false para otros puertos
             auth: {
-                user: process.env.GMAIL_USER,
-                pass: process.env.GMAIL_PASS,
+                user: process.env.MAIL_USER, // Tu usuario de email
+                pass: process.env.MAIL_PASS, // Tu contraseña de email
             },
+            tls: {
+                rejectUnauthorized: false // Asegura la conexión TLS
+            }
         });
 
-        console.log(email, message);
-        
-
         await transporter.sendMail({
-            from: email, 
-            to: process.env.GMAIL_USER, 
+            from: process.env.MAIL_USER, // El correo autenticado
+            to: process.env.MAIL_USER, // El destinatario
+            replyTo: email, // Permite responder al remitente original
             subject: 'Nuevo mensaje de contacto', 
             text: `Mensaje de: ${email}\n\n${message}`, 
         });
-
 
         // Respuesta exitosa
         return new Response(JSON.stringify({ success: true }), { status: 200 });

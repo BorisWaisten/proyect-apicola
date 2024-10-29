@@ -10,7 +10,6 @@ export default function ServicesProvided() {
 
   // Asegúrate de que services[language] existe antes de intentar mapearlo
   const selectedServices = services[language] || [];
-  console.log(services);
 
   return (
     <section className="py-12  bg-terciary text-secondary">
