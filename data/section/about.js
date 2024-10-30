@@ -3,7 +3,7 @@ import SvgWeb from "@/components/Section/About/SvgWeb";
 
 export const about = {
   es: {
-    title: 'Nuestro grupo',
+    title: 'Nuestro Grupo',
     subtitle:'Empresas',
     paragraph1:<>Somos el <b>Grupo Apícola de la Región Centro Argentina</b>, una sólida unión de <b>ocho empresas de apicultores locales</b> provenientes de <b>tres provincias</b> diferentes de la República Argentina.<b> Esta colaboración estratégica</b> nos permite combinar nuestras fortalezas y experiencia para ofrecer productos y servicios de calidad al mundo.</>,
     paragraph2:<>Con más de <b>30 años de experiencia</b>, desarrollamos productos apícolas en <b>biomas únicos y naturales</b>, garantizando la <b>trazabilidad</b> de nuestros productos y el cumplimiento de los más altos <b>estándares de calidad</b>. Esto nos ha otorgado un <b>reconocimiento destacado</b> tanto a nivel nacional como internacional.</>,
@@ -11,7 +11,7 @@ export const about = {
     poster:'¡Haz click en el mapa!'
   },
   en: {
-    title: 'Our group',
+    title: 'Our Group',
     subtitle:'Companies',
     paragraph1:<>We are the <b>Beekeeping Group of Central Argentina</b>, a solid union of <b>eight companies of local beekeepers</b> from <b>three different provinces</b> of Argentina. This <b>strategic collaboration</b> allows us to combine our strengths and experience in order to offer quality products and services to the world.</>,
     paragraph2:<>With more than <b>30 years of experience</b>, we develop beekeeping products in <b>unique and natural biomes</b>, guaranteeing the <b>traceability</b> of our products and compliance with the highest <b>quality standards</b>. This has given us an <b>outstanding recognition</b> both nationally and internationally.</>,
