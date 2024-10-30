@@ -22,7 +22,7 @@ export const services = {
       id: 4,
       name: 'Fraccionamiento',
       description: `Ofrecemos envases de 1.5 kg, así como tambores a granel para comercialización.`,
-      image: '/logos/LogoFraccionamiento.png',
+      image: '/logos/logoFraccionamiento.png',
     },
     {
       id: 5,
@@ -60,7 +60,7 @@ export const services = {
       id: 4,
       name: 'Fracturing',
       description: `We offer 1.5 kg boxes and tanks for commercialization.`,
-      image: '/logos/LogoFraccionamiento.png',
+      image: '/logos/logoFraccionamiento.png',
     },
     {
       id: 5,
