@@ -49,9 +49,9 @@ export default function ServicesProvided() {
           </ul>
         </nav>
 
-        <div className="relative flex justify-center mx-auto p-4 w-[40vh] sm:w-[70vh] md:w-[100vh] lg:w-[100vh]">
+        <div className="relative flex justify-center mx-auto p-4 h-[15vh] w-[40vh] sm:w-[70vh] md:w-[70vh] lg:w-[100vh]">
           {/* Descripción del servicio */}
-          <p className="text-justify lg:md:h-10 text-[0.7rem] sm:text-xs md:text-sm lg:text-sm ">
+          <p className="text-justify lg:md:h-10 text-[0.7rem] sm:text-xs md:text-sm lg:text-sm">
             {selectedServices[activeService].description}
           </p>
         </div>

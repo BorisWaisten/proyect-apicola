@@ -10,7 +10,6 @@ const Varieties = () => {
 
   // Asegúrate de que varieties[language] existe antes de intentar mapearlo
   const selectedVarieties = varieties[language] || [];
-  console.log(varieties);
 
   if (selectedVarieties.length === 0) {
     
