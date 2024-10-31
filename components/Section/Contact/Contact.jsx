@@ -1,18 +1,16 @@
 'use client';
 import './contact.css';
 
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/data/section/contact';
 
 export default function Contact() {
     const { language } = useLanguage();
-    
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState('');
-
-    const t = translations[language] || translations['es']; // Elige las traducciones según el idioma
+    const t = translations[language] || translations['es'];
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -37,6 +35,13 @@ export default function Contact() {
             setStatus(t.emailSentError);
         }
     };
+
+    useEffect(() => {
+        if (status) {
+            const timer = setTimeout(() => setStatus(''), 2000); // Oculta el mensaje después de 5 segundos
+            return () => clearTimeout(timer); // Limpia el temporizador si el componente se desmonta o el mensaje cambia
+        }
+    }, [status]);
 
     return (
         <div id="contact" className="flex flex-col items-center justify-center min-h-screen p-8">

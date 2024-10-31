@@ -7,11 +7,11 @@ export async function POST(req) {
 
         // Configuración de nodemailer
         const transporter = nodemailer.createTransport({
-            host: 'trade@argentinehoney.com', // Cambia esto al servidor SMTP de tu proveedor
-            port: 587, // Cambia a 465 si usas SSL en lugar de TLS
-            secure: false, // true para 465, false para otros puertos
+            host: 'c1642445.ferozo.com', // Servidor SMTP según la configuración
+            port: 465, // Puerto de salida SMTP con SSL
+            secure: true, // true para puerto 465 (SSL)
             auth: {
-                user: process.env.MAIL_USER, // Tu usuario de email
+                user: 'trade@argentinehoney.com', // Tu usuario de email
                 pass: process.env.MAIL_PASS, // Tu contraseña de email
             },
             tls: {
@@ -20,12 +20,13 @@ export async function POST(req) {
         });
 
         await transporter.sendMail({
-            from: process.env.MAIL_USER, // El correo autenticado
-            to: process.env.MAIL_USER, // El destinatario
+            from: `${email}`, // Muestra el email del remitente y usa la cuenta autenticada
+            to: 'trade@argentinehoney.com', // El destinatario
             replyTo: email, // Permite responder al remitente original
-            subject: 'Nuevo mensaje de contacto', 
-            text: `Mensaje de: ${email}\n\n${message}`, 
+            subject: 'Consulta de cliente',
+            text: `${message}`, 
         });
+        
 
         // Respuesta exitosa
         return new Response(JSON.stringify({ success: true }), { status: 200 });
