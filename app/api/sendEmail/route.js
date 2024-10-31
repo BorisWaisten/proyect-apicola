@@ -5,6 +5,12 @@ export async function POST(req) {
     try {
         const { email, message } = await req.json();
 
+        const headers = new Headers({
+            'Access-Control-Allow-Origin': 'https://argentinehoney.com',
+            'Access-Control-Allow-Methods': 'POST',
+            'Access-Control-Allow-Headers': 'Content-Type',
+        });
+
         // Configuración de nodemailer
         const transporter = nodemailer.createTransport({
             host: 'c1642445.ferozo.com', // Servidor SMTP según la configuración
@@ -29,9 +35,19 @@ export async function POST(req) {
         
 
         // Respuesta exitosa
-        return new Response(JSON.stringify({ success: true }), { status: 200 });
+        return new Response(JSON.stringify({ success: true }), { status: 200, headers });
     } catch (error) {
         console.error('Error al enviar correo:', error);
         return new Response(JSON.stringify({ success: false, error: 'Error al enviar el correo.' }), { status: 500 });
     }
+}
+
+export async function OPTIONS() {
+    return new Response(null, {
+        headers: {
+            'Access-Control-Allow-Origin': 'https://argentinehoney.com',
+            'Access-Control-Allow-Methods': 'POST, OPTIONS',
+            'Access-Control-Allow-Headers': 'Content-Type',
+        },
+    });
 }

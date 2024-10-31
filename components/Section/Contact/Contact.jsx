@@ -15,7 +15,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('/api/sendEmail', {
+            const res = await fetch('https://proyect-apicola.vercel.app/api/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
