@@ -7,10 +7,10 @@ const cors = Cors({
     origin: 'https://argentinehoney.com', // Tu dominio
 });
 
-// Función para ejecutar CORS
-function runCors(req, res) {
+// Función para ejecutar CORS// Función para ejecutar CORS
+function runCors(req) {
     return new Promise((resolve, reject) => {
-        cors(req, res, (result) => {
+        cors(req, { method: req.method }, (result) => {
             if (result instanceof Error) {
                 return reject(result);
             }
@@ -57,7 +57,11 @@ export async function POST(req) {
 }
 
 export async function OPTIONS(req) {
-    // Ejecuta CORS para OPTIONS
     await runCors(req);
-    return new Response(null, { status: 204 });
+    const headers = {
+        'Access-Control-Allow-Origin': 'https://argentinehoney.com',
+        'Access-Control-Allow-Methods': 'POST, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type',
+    };
+    return new Response(null, { status: 204, headers });
 }
