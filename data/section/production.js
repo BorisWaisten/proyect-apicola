@@ -8,17 +8,17 @@ export const productionSteps = {
         products: [
           {
             title: 'Ubicación de Apiarios',
-            image: '/production/apiaries/apiaries1.jpg',
+            image: '/apiaries1.jpg',
             description: 'Apiarios ubicados en regiones protegidas y libres de pesticidas.',
           },
           {
               title: 'Ubicación de Apiarios',
-              image: '/production/apiaries/apiaries2.jpg',
+              image: '/apiaries2.jpg',
               description: 'Apiarios ubicados en regiones protegidas y libres de pesticidas.',
             },
             {
               title: 'Ubicación de Apiarios',
-              image: '/production/apiaries/apiaries4.png',
+              image: '/apiaries3.png',
               description: 'Apiarios ubicados en regiones protegidas y libres de pesticidas.',
             },
         ],
@@ -31,17 +31,17 @@ export const productionSteps = {
         products: [
           {
             title: 'Centro de Procesamiento',
-            image: '/production/establishment/establishment1.jpeg',
+            image: '/establishment1.jpeg',
             description: 'Modernas instalaciones para el procesamiento de miel.',
           },
           {
               title: 'Centro de Procesamiento',
-              image: '/production/establishment/establishment2.jpg',
+              image: '/establishment2.jpg',
               description: 'Modernas instalaciones para el procesamiento de miel.',
             },
             {
               title: 'Centro de Procesamiento',
-              image: '/production/establishment/establishment3.jpeg',
+              image: '/establishment3.jpeg',
               description: 'Modernas instalaciones para el procesamiento de miel.',
             },
         ],
@@ -54,17 +54,17 @@ export const productionSteps = {
         products: [
           {
             title: 'Envasado Natural',
-            image: '/production/marketing/marketing1.jpeg',
+            image: '/marketing1.jpeg',
             description: 'Envasado que garantiza la pureza y frescura de la miel.',
           },
           {
               title: 'Envasado Natural',
-              image: '/production/marketing/marketing2.png',
+              image: '/marketing2.png',
               description: 'Envasado que garantiza la pureza y frescura de la miel.',
             },
             {
               title: 'Envasado Natural',
-              image: '/production/marketing/marketing3.png',
+              image: '/marketing3.png',
               description: 'Envasado que garantiza la pureza y frescura de la miel.',
             },
         ],
@@ -77,17 +77,17 @@ export const productionSteps = {
         products: [
           {
             title: 'Distribución y Ventas',
-            image: '/production/packing/packing1.jpg',
+            image: '/packing1.jpg',
             description: 'Distribución tanto a nivel local como internacional.',
           },
           {
               title: 'Distribución y Ventas',
-              image: '/production/packing/packing2.jpg',
+              image: '/packing2.jpg',
               description: 'Distribución tanto a nivel local como internacional.',
             },
             {
               title: 'Distribución y Ventas',
-              image: '/production/packing/packing3.jpg',
+              image: '/packing3.jpg',
               description: 'Distribución tanto a nivel local como internacional.',
             },
         ],
@@ -102,17 +102,17 @@ export const productionSteps = {
         products: [
           {
             title: 'Apiaries Location',
-            image: '/production/apiaries/apiaries1.jpg',
+            image: '/apiaries1.jpg',
             description: 'Apiaries located in protected and free from pesticides.',
           },
           {
               title: 'Apiaries Location',
-              image: '/production/apiaries/apiaries2.jpg',
+              image: '/apiaries2.jpg',
               description: 'Apiaries located in protected and free from pesticides.',
             },
             {
               title: 'Apiaries Location',
-              image: '/production/apiaries/apiaries4.png',
+              image: '/apiaries4.png',
               description: 'Apiaries located in protected and free from pesticides.',
             },
         ],
@@ -125,17 +125,17 @@ export const productionSteps = {
         products: [
           {
             title: 'Processing Center',
-            image: '/production/establishment/establishment1.jpeg',
+            image: '/establishment1.jpeg',
             description: 'Modern facilities for processing honey.',
           },
           {
               title: 'Processing Center',
-              image: '/production/establishment/establishment2.jpg',
+              image: '/establishment2.jpg',
               description: 'Modern facilities for processing honey.',
             },
             {
               title: 'Processing Center',
-              image: '/production/establishment/establishment3.jpeg',
+              image: '/establishment3.jpeg',
               description: 'Modern facilities for processing honey.',
             },
         ],
@@ -148,17 +148,17 @@ export const productionSteps = {
         products: [
           {
             title: 'Natural Packaging',
-            image: '/production/marketing/marketing1.jpeg',
+            image: '/marketing1.jpeg',
             description: 'Packaging that guarantees the purity and freshness of the honey.',
           },
           {
               title: 'Natural Packaging',
-              image: '/production/marketing/marketing2.png',
+              image: '/marketing2.png',
               description: 'Packaging that guarantees the purity and freshness of the honey.',
             },
             {
               title: 'Natural Packaging',
-              image: '/production/marketing/marketing3.png',
+              image: '/marketing3.png',
               description: 'Packaging that guarantees the purity and freshness of the honey.',
             },
         ],
@@ -171,17 +171,17 @@ export const productionSteps = {
         products: [
           {
             title: 'Distribution and Sales',
-            image: '/production/packing/packing1.jpg',
+            image: '/packing1.jpg',
             description: 'Distribution both locally and internationally.',
           },
           {
               title: 'Distribution and Sales',
-              image: '/production/packing/packing2.jpg',
+              image: '/packing2.jpg',
               description: 'Distribution both locally and internationally.',
             },
             {
               title: 'Distribution and Sales',
-              image: '/production/packing/packing3.jpg',
+              image: '/packing3.jpg',
               description: 'Distribution both locally and internationally.',
             },
         ],

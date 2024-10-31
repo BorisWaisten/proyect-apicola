@@ -27,10 +27,10 @@ export const features = [
     empresas: {
       title: 'Empresas',
       list: [
-        {id: 1, description: 'Charadia Apicultura', redes: () => <><SvgWeb link="https://charadiamateriales.com/" /><SvgInstagram link="https://www.instagram.com/clarodia.miel/" /></> , logo: '/company/logoCharadia.jpeg'}, 
-        {id: 2, description: 'COADELPA', redes: () => <><SvgWeb link="https://coadelpa.com/" /><SvgInstagram link="https://www.instagram.com/coadelpaltda/" /></>, logo: '/company/logoCOADELPA.jpg'},
-        {id: 3, description: 'Schneiter', redes: () => <><SvgWeb link="https://www.schneiteralimentos.com.ar/" /><SvgInstagram link="https://www.instagram.com/schneiter.consultores/" /></>, logo: '/company/logoSchneiter.png'},
-        {id: 4, description: 'Entrenuts', redes: () => <><SvgWeb link="https://entrenuts.com.ar/" /><SvgInstagram link="https://www.instagram.com/entrenuts_en/" /></>, logo: '/company/logoEntreNuts.png'}
+        {id: 1, description: 'Charadia Apicultura', redes: () => <><SvgWeb link="https://charadiamateriales.com/" /><SvgInstagram link="https://www.instagram.com/clarodia.miel/" /></> , logo: '/logoCharadia.jpeg'}, 
+        {id: 2, description: 'COADELPA', redes: () => <><SvgWeb link="https://coadelpa.com/" /><SvgInstagram link="https://www.instagram.com/coadelpaltda/" /></>, logo: '/logoCOADELPA.jpg'},
+        {id: 3, description: 'Schneiter', redes: () => <><SvgWeb link="https://www.schneiteralimentos.com.ar/" /><SvgInstagram link="https://www.instagram.com/schneiter.consultores/" /></>, logo: '/logoSchneiter.png'},
+        {id: 4, description: 'Entrenuts', redes: () => <><SvgWeb link="https://entrenuts.com.ar/" /><SvgInstagram link="https://www.instagram.com/entrenuts_en/" /></>, logo: '/logoEntreNuts.png'}
       ]
     }
   },
@@ -40,7 +40,7 @@ export const features = [
     empresas: {
       title: 'Empresas',
       list: [
-        {id: 1, description: 'Mielaq', redes: () => <><SvgWeb link="https://mielaqargentina.wixsite.com/mielaq" /><SvgInstagram link="https://www.instagram.com/mielaqnatural/" /></>, logo: '/company/logoMielaq.png'}  
+        {id: 1, description: 'Mielaq', redes: () => <><SvgWeb link="https://mielaqargentina.wixsite.com/mielaq" /><SvgInstagram link="https://www.instagram.com/mielaqnatural/" /></>, logo: '/logoMielaq.png'}  
       ]
     }
   },
@@ -50,7 +50,7 @@ export const features = [
     empresas: {
       title: 'Empresas',
       list: [
-        {id: 1, description: 'Diego Bessone Apicultura',redes: () => <><SvgWeb link="" /><SvgInstagram link="https://www.instagram.com/" /></>, logo: '/company/logoBessone.jpg'}  
+        {id: 1, description: 'Diego Bessone Apicultura',redes: () => <><SvgWeb link="" /><SvgInstagram link="https://www.instagram.com/" /></>, logo: '/logoBessone.jpg'}  
       ]
     }
   }

@@ -11,11 +11,11 @@ export default function Biome() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const biomes = [
-    { id: 1, name: 'Bosques Nativos Centro Argentina', src: '/images/biome6.jpeg' },
-    { id: 2, name: 'Campos de Córdoba', src: '/images/campo4.jpg' },
-    { id: 3, name: 'Campos de Santa Fe', src: '/images/biome2.webp' },
-    { id: 4, name: 'Campos de Entre Ríos', src: '/images/campo2.jpg' },
-    { id: 5, name: 'Cosechando en Campos de Entre Ríos', src: '/images/campo5.jpg' },
+    { id: 1, name: 'Bosques Nativos Centro Argentina', src: '/biome6.jpeg' },
+    { id: 2, name: 'Campos de Córdoba', src: '/campo4.jpg' },
+    { id: 3, name: 'Campos de Santa Fe', src: '/biome2.webp' },
+    { id: 4, name: 'Campos de Entre Ríos', src: '/campo2.jpg' },
+    { id: 5, name: 'Cosechando en Campos de Entre Ríos', src: '/campo5.jpg' },
   ];
 
   useEffect(() => {
