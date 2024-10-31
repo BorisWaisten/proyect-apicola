@@ -28,7 +28,6 @@ export async function POST(req) {
         });
         
 
-        // Respuesta exitosa
         return new Response(JSON.stringify({ success: true }), { status: 200 });
     } catch (error) {
         console.error('Error al enviar correo:', error);
