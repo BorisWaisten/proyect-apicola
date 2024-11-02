@@ -3,7 +3,7 @@ import { home } from "@/data/section/home";
 export default function Home() {
   const { language} = useLanguage();
   return (
-    <div id="home" className="relative w-full min-h-screen ">
+    <div id="home" className="relative w-full h-[70vh] sm:min-h-screen md:min-h-screen lg:min-h-screen ">
       {/* Video de fondo */}
       <video
         className="absolute  w-full h-full object-cover"

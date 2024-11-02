@@ -3,67 +3,58 @@ import Image from "next/image";
 import { useLanguage } from "@/context/LanguageContext";
 
 export default function CompanySupport() {
-    const {language} = useLanguage();
+    const { language } = useLanguage();
+
     return (
-        <section className="h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] mb-7 sm:mb-0 md:mb-0 lg:mb-0">
+        <section className="sm:min-h-screen md:min-h-screen lg:h-[80vh] mb-7">
             <div className="text-center font-title text-cuarteto md:mt-8 lg:mt-8">
-                <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 md:lg:mb-20 z-10 italic font-title">
+                <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 italic">
                     {language === 'es' ? 'Instituciones Que Nos Apoyan' : 'Institutions That Support Us'}
                 </h2>
             </div>
-            <div className="w-[40vh] sm:w-[90vh] md:w-[150vh] lg:w-[175vh] mx-auto grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-11 md:gap-0 lg:gap-8">
-                {
-                    companySupport.map((company) => {
-                        // Estilos especiales para SVG con id 1 y 4
-                        const isSpecialSvg = company.id === 1 || company.id === 4;
+            <div className="max-w-[90vw] mx-auto grid grid-cols-2 sm:grid-cols-4 gap-8 md:gap-10 lg:gap-12">
+    {companySupport.map((company) => {
+        const isSvg = company.src.endsWith(".svg");
 
-                        // Estilos específicos para el id 2
-                        const isId2 = company.id === 2;
+        // Clases específicas basadas en el ID
+        let customClasses = "flex justify-center items-center  w-[10vh] h-[10vh] sm:w-[12vh] sm:h-[12vh] md:w-[15vh] md:h-[15vh] lg:w-[30vh] lg:h-[18vh]";
+        
+        // Ajusta las clases según el ID
+        if (company.id === 1) {
+            customClasses = "w-[20vh] h-[10vh] sm:w-[12vh] sm:h-[12vh] md:w-[35vh] md:h-[15vh] lg:w-[40vh] lg:h-[18vh]";
+        } else if (company.id === 4) {
+            customClasses = "pt-2 scale-150 w-[20vh] h-[10vh] sm:w-[12vh] sm:h-[12vh]  md:w-[35vh] md:h-[15vh]  lg:scale-200 lg:w-[20vh] lg:h-[18vh]";
+        }
 
-                        // Clases generales para el contenedor
-                        const baseClasses = isSpecialSvg
-                            ? "mx-auto w-[15vh] h-[12vh] sm:w-[10vh] sm:h-[8vh] md:w-[18vh] md:h-[12vh] md:mb-[16px] lg:w-[18vh] lg:h-[12vh] lg:mb-[17px] sm:scale-200"
-                            : "mx-auto w-[8vh] h-[8vh] sm:w-[8vh]  sm:h-[8vh] md:w-[15vh] md:h-[15vh] lg:w-[15vh] lg:h-[15vh]";
-
-                        // Si es id 2, aplica estilos adicionales
-                        const containerClasses = isId2
-                            ? `${baseClasses} mx-auto w-[13vh] pt-[15px] h-[8vh] sm:pt-[15px] sm:h-[8vh] md:w-[15vh] md:h-[15vh] md:pt-[25px] lg:w-[15vh] lg:h-[15vh] lg:pt-[27px] sm:scale-150 md:scale-150 lg:scale-200` // Añade clases personalizadas para id 2 aquí
-                            : baseClasses;
-
-                        
-                        return (
-                            <div key={company.id} className="mx-auto w-[15vh] h-[20vh] sm:w-[20vh] sm:h-[20vh] md:w-[20vh] md:h-[20vh] lg:w-[35vh] lg:h-[25vh]">
-                                <div className={containerClasses }>
-                                {
-                                    isSpecialSvg ? (
-                                        // Para SVGs, usamos <img /> ya que <Image /> de Next.js no soporta SVGs bien.
-                                        <img
-                                        src={company.src}
-                                        alt={company.name}
-                                        className="h-full"
-                                        />
-                                    ) : (
-                                        <Image
-                                            src={company.src}
-                                            alt={company.name}
-                                            layout="responsive"
-                                            width={80} // Ajusta según necesidad
-                                            height={80} // Ajusta según necesidad
-                                            quality={100}
-                                            className="h-auto"
-                                            />
-                                    )
-                                    }
-
-                                </div>
-                                <p className="text-center font-bold lg:text-balance lg:w-[35vh] text-[0.7rem] sm:text-xs md:text-base lg:text-base pt-1">
-                                    {company.name}
-                                </p>
-                            </div>
-                        );
-                    })
-                }
+        return (
+            <div key={company.id} className="mx-auto flex flex-col items-center">
+                <div className={customClasses}>
+                    {isSvg ? (
+                        <img
+                            src={company.src}
+                            alt={company.name}
+                            className="w-full h-full object-contain"
+                        />
+                    ) : (
+                        <Image
+                            src={company.src}
+                            alt={company.name}
+                            width={100}
+                            height={100}
+                            objectFit="contain"
+                            quality={100}
+                            className= {`${company.id === 3 || company.id === 5 ? " w-[7vh] md:w-[12vh] lg:w-[15vh] h-auto" : "h-auto w-full"}`}
+                        />
+                    )}
+                </div>
+                <p className="text-center font-bold text-xs sm:text-sm md:text-base lg:text-base pt-2">
+                    {company.name}
+                </p>
             </div>
+        );
+    })}
+</div>
+
         </section>
     );
 }
