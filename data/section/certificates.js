@@ -42,6 +42,6 @@ export const certificates = [
     {
         id: 9,
         name: 'Certificación KOSHER',
-        src:'/logoKOSHER.png',
+        src:'/logoKosher.png',
     },
 ]
