@@ -27,7 +27,7 @@ export default function CompanySupport() {
         }
 
         return (
-            <div key={company.id} className="mx-auto flex flex-col items-center">
+            <div key={company.id} className=" flex flex-col items-center">
                 <div className={customClasses}>
                     {isSvg ? (
                         <img
