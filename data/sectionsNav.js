@@ -1,20 +1,20 @@
 // data/sectionsNav.js
 export const sectionsNav = {
     es: {
-      home: 'Inicio',
-      about: 'Nosotros',
-      varieties: 'Variedades',
-      production: 'Producción',
-      certifications: 'Certificaciones',
-      contact: 'Contacto',
+      home: 'INICIO',
+      about: 'NOSOTROS',
+      varieties: 'VARIEDADES',
+      production: 'PRODUCCIÓN',
+      certifications: 'CERTIFICACIONES',
+      contact: 'CONTACTO',
     },
     en: {
-      home: 'Home',
-      about: 'About',
-      varieties: 'Varieties',
-      production: 'Production',
-      certifications: 'Certifications',
-      contact: 'Contact',
+      home: 'HOME',
+      about: 'ABOUT',
+      varieties: 'VARIETIES',
+      production: 'PRODUCTION',
+      certifications: 'CERTIFICATIONS',
+      contact: 'CONTACT',
     }
   };
   

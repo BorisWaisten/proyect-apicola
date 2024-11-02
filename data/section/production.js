@@ -69,29 +69,6 @@ export const productionSteps = {
             },
         ],
       },
-      {
-        id: 4,
-        name: 'Comercialización',
-        description:
-          'El producto final llega a las tiendas locales y mercados internacionales, manteniendo su calidad intacta.',
-        products: [
-          {
-            title: 'Distribución y Ventas',
-            image: '/packing1.jpg',
-            description: 'Distribución tanto a nivel local como internacional.',
-          },
-          {
-              title: 'Distribución y Ventas',
-              image: '/packing2.jpg',
-              description: 'Distribución tanto a nivel local como internacional.',
-            },
-            {
-              title: 'Distribución y Ventas',
-              image: '/packing3.jpg',
-              description: 'Distribución tanto a nivel local como internacional.',
-            },
-        ],
-      },
     ],
     en: [
       {
@@ -163,28 +140,5 @@ export const productionSteps = {
             },
         ],
       },
-      {
-        id: 4,
-        name: 'Distribution',
-        description:
-          'The final product is distributed both locally and internationally, maintaining its integrity.',
-        products: [
-          {
-            title: 'Distribution and Sales',
-            image: '/packing1.jpg',
-            description: 'Distribution both locally and internationally.',
-          },
-          {
-              title: 'Distribution and Sales',
-              image: '/packing2.jpg',
-              description: 'Distribution both locally and internationally.',
-            },
-            {
-              title: 'Distribution and Sales',
-              image: '/packing3.jpg',
-              description: 'Distribution both locally and internationally.',
-            },
-        ],
-      },  
     ],
   };

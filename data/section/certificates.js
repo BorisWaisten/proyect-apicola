@@ -36,7 +36,12 @@ export const certificates = [
     },
     {
         id: 8,
-        name: 'Certificacion HALAL',
+        name: 'Certificación HALAL',
         src:'/logoHALAL.png',
+    },
+    {
+        id: 9,
+        name: 'Certificación KOSHER',
+        src:'/logoKOSHER.png',
     },
 ]

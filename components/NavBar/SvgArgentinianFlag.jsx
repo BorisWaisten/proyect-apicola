@@ -1,3 +1,4 @@
+import './nav.css';
 function SvgArgentinianFlag() {
   return (
     <svg
@@ -7,7 +8,6 @@ function SvgArgentinianFlag() {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 512 512"
       xmlSpace="preserve"
-      className="icon language-icon"
     >
       {/* Franja superior azul */}
       <path

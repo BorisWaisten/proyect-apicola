@@ -16,9 +16,9 @@ const Production = () => {
 
   return (
     <section className="py-12 bg-terciary min-h-screen">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-center mb-12 text-secondary font-title">
-          {language === 'es' ? 'Proceso Productivo' : 'Production Process'}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-secondary font-bold my-5 md:lg:mb-20 z-10 italic font-title">
+      {language === 'es' ? 'Proceso Productivo' : 'Production Process'}
         </h2>
 
         {/* Navegación de pasos del proceso productivo */}

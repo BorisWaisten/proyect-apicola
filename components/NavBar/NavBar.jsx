@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image'; // Importar el componente Image de Next.js
 import { useLanguage } from '@/context/LanguageContext';
 import LanguageToggle from './LanguageToggle';
+import { comfortaa } from '@/app/fonts/font';
 
 export default function Navbar({ sections }) {
   const { language, toggleLanguage } = useLanguage();
@@ -66,7 +67,7 @@ export default function Navbar({ sections }) {
               <a
                 href={`#${item}`}
                 key={item}
-                className="relative py-2 text-xs sm:text-sm md:text-base lg:text-lg font-medium text-white hover:text-gray-300 after:absolute after:bg-cuarteto after:w-full after:h-0.5 after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out"
+                className= {`relative py-2 text-xs sm:text-sm md:text-base lg:text-lg ${comfortaa.className} font-medium text-black hover:text-secondary after:absolute after:bg-cuarteto after:w-full after:h-0.5 after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out`}
               >
                 {navItems[item]}
               </a>

@@ -7,11 +7,11 @@ export default function Certifications() {
     return (
         <section className="relative overflow-hidden">
             <div className="relative z-10 text-center font-title text-cuarteto md:mt-8 lg:mt-8">
-                <h2 className="relative text-xl py-8 sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 font-title">
-                {language === 'es' ? 'Certificaciones' : 'Certifications'}    
+                <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 md:lg:mb-20 z-10 italic font-title">
+                    {language === 'es' ? 'Certificaciones' : 'Certifications'}    
                 </h2>
             </div>
-            <div className="relative z-10 w-[40vh] sm:w-[90vh] md:w-[140vh] lg:w-[180vh] mx-auto grid grid-cols-3 md:grid-cols-8 lg:grid-cols-8">
+            <div className="relative z-10 w-[40vh] sm:w-[90vh] md:w-[140h] lg:w-[180vh] mx-auto grid grid-cols-3  lg:grid-cols-9">
                 {
                     certificates.map((certificate) => (
                         <div key={certificate.id} className="px-2 mb-5">
@@ -25,7 +25,7 @@ export default function Certifications() {
                                     quality={80} // Ajusta la calidad de la imagen
                                 />
                             </div>
-                            <p className="text-center mt-2 sm:mt-4 text-[0.7rem] sm:text-xs md:text-sm lg:text-sm">{certificate.name}</p>
+                            <p className="text-center font-bold mt-2 sm:mt-4 text-[0.7rem] sm:text-xs md:text-sm lg:text-sm">{certificate.name}</p>
                         </div>
                     ))
                 }

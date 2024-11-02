@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
@@ -11,11 +11,9 @@ export default function Biome() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const biomes = [
-    { id: 1, name: 'Bosques Nativos Centro Argentina', src: '/biome6.jpeg' },
-    { id: 2, name: 'Campos de Córdoba', src: '/campo4.jpg' },
-    { id: 3, name: 'Campos de Santa Fe', src: '/biome2.webp' },
-    { id: 4, name: 'Campos de Entre Ríos', src: '/campo2.jpg' },
-    { id: 5, name: 'Cosechando en Campos de Entre Ríos', src: '/campo5.jpg' },
+    { id: 1, src: '/biome6.jpeg' },
+    { id: 4, src: '/campo2.jpg' },
+    { id: 5, src: '/campo5.jpg' },
   ];
 
   useEffect(() => {
@@ -47,33 +45,33 @@ export default function Biome() {
           <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm z-10">
             {language === 'es' ? (
               <>
-                Nuestros apiarios se encuentran localizados en <b>entornos naturales</b>, cerca de <b>bosques nativos</b> y <b>humedales</b> de la región del <b>Paraná y Chaco argentinos</b>, espacios únicos naturales con gran biodiversidad, <b>lejos de fuentes de contaminación y libres de pesticidas</b>.
+                Nuestros apiarios se encuentran localizados en <b>entornos naturales</b> con características <b>agroecológicas</b>, cerca de <b>bosques nativos</b> y <b>humedales</b> de la región del <b>Paraná y Chaco argentinos</b>, espacios únicos con gran biodiversidad.
               </>
             ) : (
               <>
-                Our apiaries are located in <b>natural environments</b>, near <b>native forests</b> and <b>wetlands</b> in the region of <b>Argentine Paraná and Chaco</b>, unique natural spaces with great biodiversity, <b>far from sources of pollution and free from pesticides</b>.
+                Our apiaries are located in <b>natural environments</b> with <b>agroecological characteristics</b>, near <b>native forests</b> and <b>wetlands</b> in the region of <b>Argentine Paraná and Chaco</b>, unique spaces with great biodiversity.
               </>
             )}
           </p>
           <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm z-10">
             {language === 'es' ? (
               <>
-                La <b>Miel</b> extraída de dicho <b>bioma único a nivel mundial</b> nos permite obtener un <b>producto milenario</b> conocido por sus <b>grandes propiedades medicinales</b>. Además, nos permite obtener una <b>amplia variedad de mieles</b> con diversas <b>intensidades, aromas y colores</b>, 100% naturales.
+                La <b>miel</b> extraída de dichos <b>biomas únicos a nivel mundial</b> nos permite obtener un <b>producto milenario</b> conocido por sus <b>grandes propiedades medicinales</b>. Asimismo, nos permite producir una <b>amplia variedad de mieles</b> con diversas <b>intensidades, aromas y colores</b>, 100% naturales.
               </>
             ) : (
               <>
-                <b>Honey</b> extracted from this <b>unique biome on a global scale</b> allows us to obtain a <b>millenary product</b> known for its <b>great medicinal properties</b>. Additionally, it allows us to obtain a <b>wide variety of honeys</b> with different <b>intensities, aromas, and colors</b>, 100% natural.
+                <b>Honey</b> extracted from these <b>unique global biomes</b> allows us to obtain a <b>millenary product</b> known for its <b>great medicinal properties</b>. It also allows us to produce a <b>wide variety of honeys</b> with different <b>intensities, aromas, and colors</b>, 100% natural.
               </>
             )}
           </p>
           <p className="relative text-justify text-[0.6rem] sm:text-xs md:text-sm lg:text-sm z-10">
             {language === 'es' ? (
               <>
-                Nuestra firme filosofía de <b>RESPETO POR EL MEDIOAMBIENTE</b> y la <b>ALIMENTACIÓN CONSCIENTE</b> nos llevó a elaborar <b>mieles orgánicas</b> y <b>certificadas libre de gluten</b>.
+                Nuestra firme filosofía de <b>RESPETO POR EL MEDIOAMBIENTE</b> y la <b>ALIMENTACIÓN CONSCIENTE</b> nos llevó a elaborar <b>mieles agroecológicas</b>, <b>orgánicas</b> y <b>certificadas libres de gluten</b>.
               </>
             ) : (
               <>
-                Our firm philosophy of <b>RESPECT FOR THE ENVIRONMENT</b> and <b>CONSCIOUS EATING</b> led us to produce <b>organic honeys</b> and <b>certified gluten-free</b> honey.
+                Our strong philosophy of <b>RESPECT FOR THE ENVIRONMENT</b> and <b>CONSCIOUS EATING</b> led us to produce <b>agroecological honey</b>, <b>organic</b>, and <b>certified gluten-free</b> honey.
               </>
             )}
           </p>
@@ -102,11 +100,6 @@ export default function Biome() {
             ))}
           </div>
         </div>
-        <p
-          className={`absolute start-0 bottom-0 text-justify text-secondary text-[0.5rem] sm:text-xs md:text-sm lg:text-sm z-10 p-2 `}
-        >
-          {biomes[activeIndex].name}
-        </p>
         <button
           onClick={handlePrev}
           className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-primary text-white px-2 py-1 rounded-full"

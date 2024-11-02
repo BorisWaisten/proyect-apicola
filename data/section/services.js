@@ -9,7 +9,7 @@ export const services = {
     {
       id: 2,
       name: 'Extracción',
-      description: `Contamos con más de 20.000 colmenas en producción, distribuidas en la provincia de Entre Ríos, Santa Fe y Córdoba, Argentina, desde donde obtenemos nuestra propia miel.`,
+      description: `Contamos con más de 35.000 colmenas en producción, distribuidas en las provincias de Entre Ríos, Santa Fe y Córdoba, Argentina, desde donde obtenemos nuestra propia miel.`,
       image: '/logoExtraccion.png',
     },
     {
@@ -21,14 +21,8 @@ export const services = {
     {
       id: 4,
       name: 'Fraccionamiento',
-      description: `Ofrecemos envases de 1.5 kg, así como tambores a granel para comercialización.`,
+      description: `Contamos con salas habilitadas para el fraccionamiento de la miel, en cumplimiento con todas las normativas de inocuidad y calidad agroalimentaria.`,
       image: '/logoFraccionamiento.png',
-    },
-    {
-      id: 5,
-      name: 'Homogeneización',
-      description: `Homogeneizamos nuestras mieles para garantizar una calidad consistente en cada lote.`,
-      image: '/logoHomogeneizacion.png',
     },
     {
       id: 6,
@@ -59,14 +53,8 @@ export const services = {
     {
       id: 4,
       name: 'Fracturing',
-      description: `We offer 1.5 kg boxes and tanks for commercialization.`,
+      description: `We have rooms equipped with the fracturing of honey, in compliance with all laws of inoculation and agricultural quality.`,
       image: '/logoFraccionamiento.png',
-    },
-    {
-      id: 5,
-      name: 'Homogenization',
-      description: `We homogenize our honey to ensure a consistent quality in each lot.`,
-      image: '/logoHomogeneizacion.png',
     },
     {
       id: 6,

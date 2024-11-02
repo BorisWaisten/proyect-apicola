@@ -1,32 +1,32 @@
 import nodemailer from 'nodemailer';
 
-// Exporta el método POST
 export async function POST(req) {
+    console.log("Received POST request");
     try {
         const { email, message } = await req.json();
+        console.log("Email:", email, "Message:", message);
 
         // Configuración de nodemailer
         const transporter = nodemailer.createTransport({
-            host: 'c1642445.ferozo.com', // Servidor SMTP según la configuración
-            port: 465, // Puerto de salida SMTP con SSL
-            secure: true, // true para puerto 465 (SSL)
+            host: 'c1642445.ferozo.com',
+            port: 465,
+            secure: true,
             auth: {
-                user: 'trade@argentinehoney.com', // Tu usuario de email
-                pass: process.env.MAIL_PASS, // Tu contraseña de email
+                user: 'trade@argentinehoney.com',
+                pass: process.env.MAIL_PASS,
             },
             tls: {
-                rejectUnauthorized: false // Asegura la conexión TLS
+                rejectUnauthorized: false,
             }
         });
 
         await transporter.sendMail({
-            from: `${email}`, // Muestra el email del remitente y usa la cuenta autenticada
-            to: 'trade@argentinehoney.com', // El destinatario
-            replyTo: email, // Permite responder al remitente original
+            from: email,
+            to: 'trade@argentinehoney.com',
+            replyTo: email,
             subject: 'Consulta de cliente',
-            text: `${message}`, 
+            text: message,
         });
-        
 
         return new Response(JSON.stringify({ success: true }), { status: 200 });
     } catch (error) {

@@ -7,8 +7,8 @@ export default function CompanySupport() {
     return (
         <section className="h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] mb-7 sm:mb-0 md:mb-0 lg:mb-0">
             <div className="text-center font-title text-cuarteto md:mt-8 lg:mt-8">
-                <h2 className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold sm:mb-4 md:mb-6 lg:mb-6 z-10 py-8 font-title">
-                    {language === 'es' ? 'Instituciones que nos apoyan' : 'Institutions that support us'}
+                <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 md:lg:mb-20 z-10 italic font-title">
+                    {language === 'es' ? 'Instituciones Que Nos Apoyan' : 'Institutions That Support Us'}
                 </h2>
             </div>
             <div className="w-[40vh] sm:w-[90vh] md:w-[150vh] lg:w-[175vh] mx-auto grid grid-cols-2 sm:grid-cols-4 md:grid-cols-4 lg:grid-cols-4 gap-11 md:gap-0 lg:gap-8">
@@ -56,7 +56,7 @@ export default function CompanySupport() {
                                     }
 
                                 </div>
-                                <p className="text-center lg:text-balance lg:w-[35vh] text-[0.7rem] sm:text-xs md:text-base lg:text-base pt-1">
+                                <p className="text-center font-bold lg:text-balance lg:w-[35vh] text-[0.7rem] sm:text-xs md:text-base lg:text-base pt-1">
                                     {company.name}
                                 </p>
                             </div>

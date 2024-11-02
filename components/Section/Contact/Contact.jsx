@@ -45,8 +45,8 @@ export default function Contact() {
 
     return (
         <div id="contact" className="flex flex-col items-center justify-center min-h-screen p-8">
-            <h2 className="relative text-xl sm:text-2xl md:text-3xl lg:text-4xl text-title font-bold mb-6 z-10 font-title text-center">
-                {t.contact}
+            <h2 className="relative text-xl sm:text-2xl md:text-4xl lg:text-[3rem] text-title font-bold my-5 md:lg:mb-20 z-10 italic font-title">
+                 {t.contact}
             </h2>
             <p className="text-base sm:text-lg text-center text-terciary max-w-2xl mb-8">
                 {t.description}
