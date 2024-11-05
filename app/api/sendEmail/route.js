@@ -8,7 +8,8 @@ export async function POST(req) {
   const headers = {
     'Access-Control-Allow-Origin': 'https://argentinehoney.com', // Cambia esto a '*' solo si deseas permitir todos los orígenes
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
-    'Access-Control-Allow-Headers': 'Content-Type'
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Access-Control-Credentials': 'true',
   };
 
   try {
