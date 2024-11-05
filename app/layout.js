@@ -4,19 +4,26 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import Navbar from "@/components/NavBar/NavBar";
 import { sectionsNav } from "@/data/sectionsNav";
 import { footer } from "@/data/footer";
+import Head from "next/head";
 
 export const metadata = {
-  title:'Home',
+  title: "Argentine Honey",
+  icons: {
+    icon: "/logoNavBar.jpg",
+  }
 };
+
 export default function RootLayout({ children }) {
 
   return (
     <html lang="es">
+      <Head>
+        <title>{metadata.title}</title>
+      </Head>
       <body>
-        <LanguageProvider> {/* Asegúrate de que LanguageProvider envuelva toda la app */}
+        <LanguageProvider> 
           <Navbar sections={sectionsNav} />
-          {/* <LeftNav sections={sectionsNav}/> */}
-          {children}
+           {children}
           <Footer footer={footer} />
         </LanguageProvider>
       </body>
