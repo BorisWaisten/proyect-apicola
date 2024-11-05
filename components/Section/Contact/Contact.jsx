@@ -16,14 +16,14 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('/api/sendEmail/', {
+            const res = await fetch('/api/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
                     to: email,
-                    subject: 'Asunto del correo', // Reemplaza con un asunto específico o dinámico
+                    subject: 'Asunto del correo', 
                     text: message,
                 }),
             });
