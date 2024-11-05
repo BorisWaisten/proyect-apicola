@@ -4,9 +4,10 @@ import './contact.css';
 import { useState,useEffect } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/data/section/contact';
-
+import Image from 'next/image';
 export default function Contact() {
     const { language } = useLanguage();
+    
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [status, setStatus] = useState('');
@@ -15,16 +16,20 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('https://proyect-apicola.vercel.app/api/sendEmail', {
+            const res = await fetch('/api/sendEmail', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ email, message }),
+                body: JSON.stringify({
+                    to: email,
+                    subject: 'Asunto del correo', // Reemplaza con un asunto específico o dinámico
+                    text: message,
+                }),
             });
-
+    
             const result = await res.json();
-
+    
             if (result.success) {
                 setStatus(t.emailSentSuccess);
             } else {
@@ -35,6 +40,8 @@ export default function Contact() {
             setStatus(t.emailSentError);
         }
     };
+    
+    
 
     useEffect(() => {
         if (status) {
@@ -59,11 +66,25 @@ export default function Contact() {
                         <h3 className="text-secondary md:text-xl font-bold mb-4">
                             {t.contactInfo}
                         </h3>
-                        <p className="text-secondary text-xs md:text-lg mb-2">
-                            <strong>{t.address}</strong>
+                        <p className="flex w-full text-secondary text-xs md:text-lg mb-2">
+                            <Image
+                                src="/logoEmail.png"
+                                width={30}
+                                height={30}
+                                alt="logoEmail"
+                                className="w-[4vh] mr-1 sm:w-[5vh] sm:mr-2 md:w-[7vh] md:mr-2 lg:w-[7vh] lg:mr-2"
+                            />
+                            <strong className='my-auto'>trade@argentinehoney.com</strong>
                         </p>
-                        <p className="text-secondary text-xs md:text-lg mb-2">
-                            <strong>{t.phone}</strong>
+                        <p className="flex  w-full text-secondary text-xs md:text-lg mb-2">
+                            <Image
+                                    src="/logoPhone.png"
+                                    width={30}
+                                    height={30}
+                                    alt="logoEmail"
+                                    className="w-[2.5vh] ml-1 mr-3 sm:w-[3vh] md:w-[5vh] md:ml-2 md:mr-4 lg:w-[5vh] lg:ml-2 lg:mr-4"
+                                />
+                            <strong className='my-auto'>+5491140315794</strong>
                         </p>
                     </div>
                 </div>

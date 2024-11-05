@@ -54,7 +54,7 @@ export default function Navbar({ sections }) {
                 alt="Logo"
                 width={120} // Ajusta el tamaño según el diseño
                 height={120} // Ajusta el tamaño según el diseño
-                className="w-[8vh] sm:w-[10vh] md:w-[12vh] lg:w-[12vh] rounded-full"
+                className="w-[8vh] sm:w-[10vh] md:w-[10vh] lg:w-[12vh] rounded-full"
                 quality={100} // Define la calidad de la imagen
                 priority={true} // Prioriza la carga de la imagen
               />
@@ -67,7 +67,7 @@ export default function Navbar({ sections }) {
               <a
                 href={`#${item}`}
                 key={item}
-                className= {`relative py-2 text-xs sm:text-sm md:text-base lg:text-lg ${comfortaa.className} font-medium text-black hover:text-secondary after:absolute after:bg-cuarteto after:w-full after:h-0.5 after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out`}
+                className= {`relative py-2 text-xs sm:text-sm md:text-xs lg:text-sm ${comfortaa.className} font-medium text-black hover:text-secondary after:absolute after:bg-cuarteto after:w-full after:h-0.5 after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out`}
               >
                 {navItems[item]}
               </a>
@@ -134,7 +134,7 @@ export default function Navbar({ sections }) {
               <a
                 href={`#${item}`}
                 key={item}
-                className="block px-3 py-2 rounded-md text-xs sm:text-sm md:text-base lg:text-base font-medium text-white hover:bg-secondary hover:text-terciary"
+                className="block px-3 py-2 rounded-md text-xs sm:text-sm md:text-base lg:text-base font-medium text-black hover:bg-secondary hover:text-terciary"
               >
                 {navItems[item]}
               </a>

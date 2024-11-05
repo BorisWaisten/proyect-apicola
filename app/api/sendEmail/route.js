@@ -1,36 +1,28 @@
-import nodemailer from 'nodemailer';
+import { EmailTemplate } from '../../../components/EmailTemplate';
+import { Resend } from 'resend';
 
-export async function POST(req) {
-    console.log("Received POST request");
-    try {
-        const { email, message } = await req.json();
-        console.log("Email:", email, "Message:", message);
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-        // Configuración de nodemailer
-        const transporter = nodemailer.createTransport({
-            host: 'c1642445.ferozo.com',
-            port: 465,
-            secure: true,
-            auth: {
-                user: 'trade@argentinehoney.com',
-                pass: process.env.MAIL_PASS,
-            },
-            tls: {
-                rejectUnauthorized: false,
-            }
-        });
+export async function POST(res) {
+  try {
 
-        await transporter.sendMail({
-            from: email,
-            to: 'trade@argentinehoney.com',
-            replyTo: email,
-            subject: 'Consulta de cliente',
-            text: message,
-        });
+    const { to, text , subject } = await res.json();
 
-        return new Response(JSON.stringify({ success: true }), { status: 200 });
-    } catch (error) {
-        console.error('Error al enviar correo:', error);
-        return new Response(JSON.stringify({ success: false, error: 'Error al enviar el correo.' }), { status: 500 });
+    const emailContent = EmailTemplate({ message: text, email: to });
+
+    const { data, error } = await resend.emails.send({
+      from: 'Argentine Honey <trade@argentinehoney.com>',
+      to: process.env.MAIL_USER,
+      subject: subject,
+      react: emailContent,
+    });
+
+    if (error) {
+      return new Response(JSON.stringify({ error }), { status: 500 });
     }
+
+    return new Response(JSON.stringify(data), { status: 200 });
+  } catch (error) {
+    return new Response(JSON.stringify({ error: error.message }), { status: 500 });
+  }
 }

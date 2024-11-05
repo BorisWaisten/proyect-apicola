@@ -5,6 +5,9 @@ import Navbar from "@/components/NavBar/NavBar";
 import { sectionsNav } from "@/data/sectionsNav";
 import { footer } from "@/data/footer";
 
+export const metadata = {
+  title:'Home',
+};
 export default function RootLayout({ children }) {
 
   return (

@@ -10,6 +10,9 @@ import Biome from "@/components/Section/Biome/Biome";
 import Production from "@/components/Section/Production/Production";
 import Certifications from "@/components/Section/Certifications/Certifications";
 import CompanySupport from "@/components/Section/CompanySupport/CompanySupport";
+
+
+
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
 

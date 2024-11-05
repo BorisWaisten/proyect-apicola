@@ -6,7 +6,7 @@ import {SvgEnglishLanguage} from "./SvgEnglishLanguage.jsx";
 const LanguageToggle = ({language, onLanguageToggle}) => {
 
   return (
-    <button onClick={onLanguageToggle} className=" w-[4vh] sm:w-[3vh] md:w-[5vh] lg:w-[5vh] ">
+    <button onClick={onLanguageToggle} className=" w-[4vh] sm:w-[2.5vh] md:w-[3.5vh] lg:w-[5vh] ">
       {language === 'es' ? <SvgArgentinianFlag /> : <SvgEnglishLanguage />}
     </button>
   )

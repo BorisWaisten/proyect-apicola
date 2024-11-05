@@ -3,6 +3,7 @@
 
 import { useRouter } from 'next/navigation'; // Cambia a 'next/navigation' en la nueva estructura
 
+
 export default function NotFound() {
   const router = useRouter();
 

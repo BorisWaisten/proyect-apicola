@@ -10,8 +10,6 @@ export const translations = {
         messagePlaceholder: 'Write your message here...',
         emailSentSuccess: 'Email sent successfully.',
         emailSentError: 'Error sending email.',
-        address:'Mail: trade@argentinehoney.com',
-        phone:'Phone: +5491140315794',
     },
     es: {
         contact: 'Contacto',
@@ -24,7 +22,5 @@ export const translations = {
         messagePlaceholder: 'Escribe tu mensaje aquí...',
         emailSentSuccess: 'Correo enviado exitosamente.',
         emailSentError: 'Error al enviar el correo.',
-        address:'Email: trade@argentinehoney.com',
-        phone:'Celular: +5491140315794',
     },
 };
