@@ -30,7 +30,7 @@ export default function Contact() {
     
             const result = await res.json();
     
-            if (result.success) {
+            if (result.id) {
                 setStatus(t.emailSentSuccess);
             } else {
                 setStatus(t.emailSentError);
