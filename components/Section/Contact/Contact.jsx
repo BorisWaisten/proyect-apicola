@@ -16,7 +16,7 @@ export default function Contact() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('/api/sendEmail', {
+            const res = await fetch('/api/sendEmail/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
