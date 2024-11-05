@@ -19,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <Head>
         <title>{metadata.title}</title>
+        <link rel="icon" href="/logoNavBar.jpg" />
       </Head>
       <body>
         <LanguageProvider> 
