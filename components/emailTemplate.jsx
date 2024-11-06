@@ -17,7 +17,7 @@ export const EmailTemplate = ({ message, email }) => (
         textAlign: 'center'
       }}>
       <img 
-        src="logoNavBar.jpg" 
+        src="/logoNavBar.jpg" 
         alt="Grupo Apícola de la Región Centro Argentina" 
         style={{ width: '150px', height: 'auto' }} 
       />
