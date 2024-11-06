@@ -62,14 +62,16 @@ export default function Navbar({ sections }) {
           </div>
 
           {/* Menú de Navegación (Responsive) */}
-          <div className="hidden md:flex space-x-8">
+          <div className="hidden md:flex md:space-x-4 ">
             {Object.keys(navItems).map((item) => (
               <a
                 href={`#${item}`}
                 key={item}
-                className= {`relative py-2 text-xs sm:text-sm md:text-xs lg:text-sm ${comfortaa.className} font-medium text-black hover:text-secondary after:absolute after:bg-cuarteto after:w-full after:h-0.5 after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out`}
+                className= {`relative py-2 text-xs  md:text-xs lg:text-sm ${comfortaa.className}  text-black hover:text-secondary after:absolute after:bg-cuarteto after:w-full after:h-0.5 after:bottom-0 after:left-0 after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:duration-300 after:ease-in-out`}
               >
-                {navItems[item]}
+                <b>
+                  {navItems[item]}
+                </b>
               </a>
             ))}
           </div>

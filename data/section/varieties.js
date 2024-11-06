@@ -47,7 +47,7 @@ export const varieties = {
           },
           {
             title: 'Miel de Monte de Verano',
-            description: 'Miel producida producida en verano de los bosques nativos de la Región Centro argentina, con un aroma persistente, un sabor delicado, y notas vegetales y afrutadas',
+            description: 'Miel producida producida en verano de los bosques nativos de la Región Centro argentina, con un aroma persistente, un sabor delicado, y notas vegetales y afrutadas.',
           },
           {
             title: 'Miel Cremosa de Prado de Otoño',
@@ -61,7 +61,7 @@ export const varieties = {
         products: [
           {
             title: 'Orgánica',
-            description: 'Miel orgánica a granel obtenida de ambientes y áreas de producción certificados',
+            description: 'Miel orgánica a granel obtenida de ambientes y áreas de producción certificados.',
           },
           {
             title: 'Especial',
@@ -79,7 +79,7 @@ export const varieties = {
         products: [
           {
           title: '',
-          description: 'Producimos y adaptamos nuestros productivos  a la necesidad del cliente.',
+          description: 'Producimos y adaptamos nuestros productos a la necesidad del cliente.',
           },
         ],
       }
